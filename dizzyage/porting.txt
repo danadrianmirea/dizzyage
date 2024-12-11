@@ -1,0 +1,275 @@
+---------------------------------------------------------------------------------------------------------------------------
+DizzyAGE Porting from v2.2 to v2.3
+
+All v2.2 games should work on v2.3 without changes.
+See the history.txt file for details.
+
+---------------------------------------------------------------------------------------------------------------------------
+DizzyAGE Porting to v2.1 or v2.2
+
+Make sure you cover all the advices from porting to v2.0 and then read the
+included history.txt file to spot differences between these versions and v2.0.
+
+---------------------------------------------------------------------------------------------------------------------------
+DizzyAGE Porting to v2.0
+
+This document is ment to help DizzyAGE developers to port their previous games to DizzyAGE v2.0.
+Porting old games to DizzyAGE v2.0 is important because now, this is the standard for DizzyAGE games.
+Games that run on DizzyAGE v2.0 will benefit of future support and they'll be ready when the engine will
+be upgraded for future OS or platform compatibility.
+
+The safest way is to start from the new version of default template
+and add your game specific functions in the game.gs and gamedef.gs files.
+These are mostly the functions you had in objects.gs and rooms.gs.
+Also, you'll have to add the changes made on the rest of the default template, if any.
+Take advantage of the new features, like the auto-save of static brushes with valid ids
+(so you don't have to save these my hand).
+The loading and playing of audio files have been changed, but it's no big deal to adapt.
+You'll have to load and re-save your old map in the new editor.
+Some tiles have been fixed for bad pixels or too many colors.
+
+You will find more details about the engine changes in the history.txt file and in the changes list below.
+
+Staying close to the format of the new default template gives clarity to the game's code 
+and beginers will be able check the differences and learn from these games in a very easy way.
+
+Of course, you must test your game again and make sure you didn't add any bugs during the porting process.
+If you need help with the porting, ask me and, as my free time permits, I'll try to assist you with it.
+
+Here is the version changes list, with a little more details:
+
+---------------------------------------------------------------------------------------------------------------------------
+CHANGES LIST:
+---------------------------------------------------------------------------------------------------------------------------
+
+(in no particular order)
+
+1. DizzyAGE scripts (GS9) use now a special type for working with files, called "ptr".
+   Before, it was using integers "int", so now it is no longer acceptable to compare a file type with 0.
+   Instead of:
+   f = gs_fileopen("myfile",0); if(f==0) goto fileerror;
+   use
+   f = gs_fileopen("myfile",0); if(!f) goto fileerror;
+   More details are available in the GS9 manual.
+
+2. The audio flow was rewriten to be more similar to the tiles flow. See default template for examples
+   Audio files have now a special naming format, with unique ids, like the tiles.
+   Ex: "100 mymusic.ym"
+   Ex: "10 myfx 2.ogg" the 2 after the name specify the number of samples that can be played at once (that was specified in script before)
+   All audio files are now accessed by id, not by their indexes (as before).
+   Ex: MusicPlay(100);
+   Ex: voiceidx = SamplePlay(10);
+   Here are some differences and changes:
+   
+   SampleLoad(filepath) loads all samples from the specified directory.
+   SampleUnload() unloads all loaded samples.
+   MusicLoad(filepath) loads all music files from the specified directory (doesn't start them or anything).
+   MusicUnload() unloads all loaded musics.
+   MusicFade(fadeout, fadein) is used to specify fade options (before this was done in MusicPlay directly).
+   MusicPlay(id, [position]) plays music file with id, starting from optional position parameter.
+   MusicPosition() returns position of current music in milisconds
+   
+   Music should get paused during switching to other applications (Alt+tab) or minimising the game's window.
+   
+   A special handler "HandlerMusicLoop" was added in handlers.gs 
+   It is called when the music wants to loop from the begining and it can allow advanced music management.
+   Like having an ordered list of tunes or play random music files.
+   
+   Remember that music is streamed and music files can be big (like 5 min songs or so), 
+   but sample files must be small enought to fit all in memory at once.
+   
+3. There are now 48 brush props, instead of 40 before
+   Prop 14 is used for SCALED (percent values: 100=normal size, 200=double size, 50=half size, etc)
+   And  15 is used as SELECT (in editor) (moved from 14) !!!!
+   The new editor supports old maps and upgrades them when saved.
+   New maps will no longer be opened by old editor.
+   
+4. SHADER_OPAQUE has now value 0 and SHADER_BLEND has value 1 now
+   The new editor covets old maps silently when they are saved.
+
+5. KeyboardStatus returns now only 0=up and 1=down 
+   "Just Down" (key hit, value 2) is no longer supported since it was dependent of the game cycle.
+   Do have the same effect use a global script variable to remember old status of the key you test.
+
+6. Separate support for KEY_UP (K/up arrow), KEY_DOWN (M/down arrow) and KEY_JUMP(space)
+   also in dizy.ini as key1_up, key1_down, key1_jump, etc
+   Default the template still use the up key for jump to allow one hand playing :)
+   The SUPPORT_JUMPUP define in script can be changed to adjust this behaviour.
+   KEY_LEFT, KEY_RIGHT... defines from def.gs are now all exported by the engine, so no need to have them again in def.gs
+   Up and down keys can be used to navigate in menus, as well as left and right.
+      
+7. The main script file that is loaded by the engine is now dizzy.gs instead of game.gs.
+   It usually includes all other script files.
+   The game files that users usually edit are now:
+   gamedef.gs containing defines values,
+   game.gs containing all game's specific functions (that before were split in objects.gs and rooms.gs)
+   This partitioning was made for beginners to limit the number of files they have to edit for simple games.
+   Advanced users can change everything as they like, but it is recomended to keep the default tenplate files as 
+   close as possible to default and add separate files, with functions specific for their game.
+   That is for easy porting and teaching purposes.
+
+8. Removed: objects.gs, rooms.gs, tutorial.gs; 
+   sounds.gs was renamed to sound.gs
+   intro.gs was moved in menus.gs where were moved all functions from dialogs.gs, representing menus
+   MainMenu() is the old intro and uses OpenDialogMainMenu() that supports load and save options
+   OpenDialogGameMenu() is the old pause (the menu during the game)
+   User defines were put in gamedef.gs so beginners don't need to change those files to adjust author or game's name.
+
+9. SaveUserData and LoadUserData callbacks for additional saved data were placed in the game.gs file, for users to add
+   game additional data, and avoid editing the default files.gs
+   
+10.The new editor saves a .brs file in the map folder, containing all all brushes that have ids (non zero)
+   The files.gs read this list and load and save those brushes automated, so no need to worry about
+   what static brushes your game access and need to save. 
+   Though, take care not to add ids to brushes that don't need to be accessed from scripts.
+   Use the editor release/debug scripts to check your map for this kind of things.
+   
+11.A game id is automated saved, to prevent old version (or other's games) saved games to be loaded in newer versions.
+   The users should change the define (GAME_ID) from gamedef.gs each time they release an update for one of their games.
+   The id can be a short text representing some coded info of the version. Nothing special, just to be different from other games.
+
+12.The tiles folder was updated and some tiles were chaged, so if you used them in your games, you will have to edit your maps a bit.
+   (that is if you want to use the same tiles set as the default template)
+   Have a files compare with the old tiles or your game's tiles folder to see the differences.
+   To mention a few changes:
+   187 merchant.tga
+   188 monkey 2.tga
+   237 smoke 4.tga (renamed from 20) !!
+   238 airbubbles.tga (renamed from 21) !!
+   Also new dizzy tiles with aqua costume and stuff were added.
+   Thanks to PTeal and Jamie for some of the new tiles.
+   
+13.Player color is now supported (P_COLOR)
+
+14.Developer console is now included in the engine, not a separate application.
+   Start the game with dev=1 in dizzy.ini to enable developer mode (showed in top left corner)
+   Press '`' or '~' (left of '1' key) to open or close the console.
+   Use page up/down home/end to scroll it
+   Use 'INS' key to insert a console command. Ex: println("test");
+   During command edit use 'TAB' to find defined names (funcitons, variables, etc), 
+   DOWN, UP for previous calls, LEFT, RIGHT or ctrl+LEFT, ctrl+RIGHT
+   ENTER to accept, ESC or INS to refuse, BACKSPACE and DELETE to delete (or ctrl+DELETE), HOME, END,
+   The console is a very useful tool for developers to check the status of their game and find bugs.
+   
+15.A dizzy.inf file is placed in the Data folder.
+   It contains info about the game. Some of this info will be used by the setup application to show the title and the author.
+   
+   The "dizzyage_version" property specify the version of the DizzyAGE engine used for the game (like: 2.0 or 2.01, etc)
+   It is used to test if the game matches the running engine, to avoid running old games on new engines or otherwise.
+   
+   The "game_protection", (later removed) is used to protect packed games against unpacking.
+   This way, new launched games can prevent cheat attempts, people that open the archive and check the map in edditor.
+   It was made to prevent fun spoiling, not to prevent people to learn from other's sources. 
+   So use only if your game is brand new and you have something against cheaters.
+   Still, developers can contact you for the password and have a look at the sources after they finished the game :)
+   Or you can give the pass on the Finish Dialog as bonnus, ha!
+   The new pak tool understand this option and can still load old pak files, but new ones can't be opened with old pak tool.
+   
+16.Custom room size support
+   Set room size from editor as before, but now it is saved and interpreted in the game.
+   The screen size remain in Z80 format 256x192 and you can still draw the hud at negative position, for border graphics.
+   To support custom room size, the engine exports:
+   G_VIEWX, G_VIEWY for the room position on the hud,
+   G_ROOMW, G_ROOMH for the room size (set from editor)
+   
+17.Along with the SCALE property for brushes, the FLIP property support the third bit, for 90 degree rotations.
+   So bit 0=flipx, 1=flipy, 2=flipr
+   Try it in editor to see what it does.
+   
+18.Player have a new property P_CUSTOMMOVE to be used to set custom script movement for player
+   The P_STATUS remain the same and is interpreted by the engine if P_CUSTOMMOVE is 0 and can be
+   interpreted by the scripts as users like.
+   See handlers.gs PlayerUpdate and movement.gs (containing a custom move, identical with the one provided by the engine)
+   Also see Shrink tech demo.
+   
+19.WaterPlay support
+   Dizzy can now swim like in Dizzy V
+   Defines are placed in gamedef.gs for easy config (set flippers and scuba items' ids, waterplay support)
+   See the WaterPlay tech demo.
+   
+20.The engine supports both DirectX 9 and OpenGL through the video "api" property from the dizzy.ini
+   If api is 0, then DirectX 9 is first tested, then OpenGL. If api is 1, the OpenGL is first, then DirectX.
+   So, if one api fails (not installed or options not supported by hardware) the other is used.
+   The DirectX 8 is no longer supported - you have to install DirectX 9 or use OpenGL.
+   
+   Please edit dizzy.ini by hand, and test both versions of apis, to make sure the game is the same on both of them.
+   The api option will be accessible from setup application, when ready.
+   
+21."Dizzy And The Mushroom Pie" and "Dizzy And The Healing Potion" were upgraded for v2.0
+   You also have "WaterPlay" demo, "Shrink" demo and "Upside Down" demo (also upgreaded).
+
+21.Editor support scrolling with the mouse by click and drag the side sliders.
+22.Editor saves now the zooming state for the markers (F2,ctrl+F2).
+23.Editor requests exit confirmation on Alt+F4 or other closing methode.
+
+BETA2:
+
+24.Editor uses an editor.pak instead of having all data in the editor folder
+   It can be unpacked with the pak tool, if advance scripts editing is need.
+
+25.The engine uses GS9 v2.0 
+   The GS9 Programming Book is the base of DizzyAGE scripting and a good start for all beginners.
+   http://www.simion.co.uk/gs9
+
+26.The default template saves the music id and position in saved games, 
+   and it also restore it on player respawn. 
+   So the GetMusicLocation function is not needed anymore.
+   
+27.F10 toggles between full desktop (not real full screen) mode and small window mode, but both in windowed mode.
+   Please test this on both api.
+
+28.game_protection was removed from dizzy.inf
+   the password is now specified in the pak tool
+
+29.The setup uses custom information from dizzy.inf, including a game website and some game about text.
+   so there's no need for a setup customizer anymore
+   and it is recomended to fill the dizzy.inf file with correct info
+
+30.The setup was updated to work with v2.0 ini
+   It no longer supports copy of the files files,
+   but it can create program group in the START menu
+
+BETA3 (not released):
+
+31.Editor book is ready
+32.Editor supports user scripts (in the editor.gs file)
+33.Editor has a room counting script - large maps will appreciate it!
+34.Editor supports zoom in mapping dialog with + and - both from the numpad and from _ and = main keys (laptops need)
+
+FINAL:
+
+35.Fixed bug in GS9 (gs_findfiles)
+36.Fixed word spell COLOR_YELLOW in def.gs (was yelow) - see if you were using it as "yelow" and correct it
+37.Fixed some tiles for wrong or too many colors (187,207,209,and others)
+38.Removed game_protection from dizzy.inf, password is now given directly in the PAK tool, that was also updated
+39.Updated comments in the default template files
+40.Updated documentation and website
+41.Added TGA Works and Audio Works tools
+42.The demo game, "Dizzy and the Mushrooms Pie", features now a spider, as a didactic example.
+43.The game "Dizzy and the Healing Potion" was also ported to DizzyAGE v2.0
+   
+---------------------------------------------------------------------------------------------------------------------------
+FIXES LIST:
+---------------------------------------------------------------------------------------------------------------------------
+
+1. fixed bad bug in partitioning brushes per room (double bug)
+2. fixed bug in engine at keyboard conversion from character to code
+3. bug in script editor, default roomw define was 204 instead 240 but the editor.ini was saving the day
+And a few other minor fixes, related to the engine code and stuff.
+
+BETA2:
+
+4. fixed DirectX problem on some video cards (GeForce2) - hopefully...
+5. fixed bug in editor palette browser
+
+BETA3 (not released):
+
+6.Fix editor bug: loosing render device (if a game entered fullscreen while editor open)
+7.Fix editor bug: some line's last pixel was drawing different on two video boards (ati vs nvidia)
+
+FINAL:
+
+8.fixed gs_filefind bug in GS9.
+9.fixed F10 full screen feature problems.
+
+---------------------------------------------------------------------------------------------------------------------------

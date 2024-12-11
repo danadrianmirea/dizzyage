@@ -1,0 +1,362 @@
+------------------------------------------------------------------------------
+DizzyAGE Version History
+------------------------------------------------------------------------------
+100427 v2.4
+    - support for custom game resolution in dizzy.inf
+    - support for pc time function: gs_systemtime(y,m,d), gs_systemdate(h,m,s)
+	- fixed memory leak in audio stream, when exiting the game (when codec is in render mode)
+	- fixed bug in blocking static brushes with frame property set higher than 0 (was not blocking)
+	
+090927 v2.3.1
+	- fixed editor bug: when importing old versions maps, the scale property was set to 1 for previously selected objects.
+	
+090426 v2.3
+	- native support for scrolling 
+	- native support for viewport flip, both vertical and horizontal
+	  no more need for tricky maps like in the upsidedown demo
+	- optional larger material map up to 3x3 rooms around current location
+	  to use with scrolling if necessary (for ai, etc.)
+	- new game properties to access through GameSet/Get:
+	  G_VIEWPORTMODE (0/1), G_VIEWPORTX, G_VIEWPORTY, G_VIEWPORTFLIP, G_FULLMATERIALMAP
+	- removed controller disconnect log messages and support reconnection
+	- switched joystick jump and action buttons, so action is now on 'A' button of the xbox360 controller (makes more sense)
+	- fixed tiles path limitation (bug in editor options) - up to 200 characters now.
+	- added additional water tile with 4 animated frames (tile id=240)
+	- render vsync option (in dizzy.ini and in setup/video/advanced) - default off.
+	- updated default template to support scrolling if G_VIEWPORTMODE is 1
+	- editor option for custom screen size
+
+
+080928 v2.2.1
+ 	- support for joystick: JoystickStatus(key) and JoystickAxe(axe)
+ 	  button codes: 0<=key<20 (the hat switch's four directional buttons buttons are 16,17,18,19)
+ 	  axe codes: 0<=axe<8 (first x axe is 0, and first y axe is 1) 
+ 	  axe values range from -1000 to 1000
+ 	- customization of joystick buttons and x and y axes in dizzy.ini
+ 	  use these values if you are to use Joystick functions in your scripts
+ 	  you should use the dead zone values in dizzy.ini if you must check axes' values.
+ 	- support for different game names:
+ 	  if you rename the dizzy.exe to mygame.exe for example, it will load mygame.pak, mygame.ini and will log in mygame.log
+ 	  make sure you adjust setup resource script too, to accomodate such changes!
+ 	- setup.exe supports external installer like Inno Setup
+ 	  it will detect executable files starting with "install" or "unins" and will auto adjust it's install and uninstall options, to launch these files.
+ 	  if no such executables are found, the setup.exe will work as before, creating desktop and group shortcuts.
+ 	- setup.exe supports custom readme file
+ 	  in dizzy.inf set the game_readme to the file you want (ex: game_readme="mygame.pdf").
+ 	  if not mentioned, it will look for "readme" files with .txt, .html, .doc, and .pdf extentions.
+ 	- setup.exe now uses the shortcut name for the program group in the start menu, instead of the game's name
+ 	  and it specifies in it's internal gs script what is the game's pak file, to support different pak names
+ 	  the info file from the pak remains dizzy.inf
+ 	- documentation is not yet updated about v2.2.1 features
+ 	
+080406 v2.2
+
+	- support for flashing color {f:1} on the in-text tiles {t:id dx dy}.
+	- template: added SampleStopAll() in files.gs, after loading a saved game.
+	- changed misspelled "localisation" into "localization", in setup, dizzy.ini group, and docs.
+	- included TextWorks tool, for text strings export and import, useful for localization scripts.
+	
+080330 v2.2b
+
+	editor:
+	- support numpad enter key
+	- improved map scroll with arrow keys (better delays)
+	
+	engine:
+	- optimized audio module (better streaming)
+	- custom fonts support using a font format file (.fnt) along with the font tile (.tga). Set current font format with the HudFont(id) function.
+	- exported FontLoad and FontUnload (see docs)
+!	- HudDrawText uses the id of the tile, instead of it's index. It uses the current font format.
+!	- HudGetTextWidth and HudGetTextHeight return text's sizes in pixels, not in charactes! They use the current font format.
+	- HudGetTextRows and HudGetTextColumns return text's sizes in charactes
+!	- HudDrawTile uses the id of the tile, instead of it's index.
+	- resources groups for tiles, sounds, musics and fonts, optional set at load and unload (default group is 0). (see docs)
+	- fixed bug in clipping rotated brushes on the material map
+	- DebugLog and DebugDev return current value, if called with no parameters
+	- custom dead zones for x and y joystick axes, in dizzy.ini. Players with sensitive joysticks can adjust them if needed. Default 500.
+	- GS9 script allows redefiniton of global variables with #def and applies the new values
+		
+	tools:
+	- setup supports language localisation through the "language" option in [LOCALISATION] group in dizzy.ini file
+	- and through the "game_languages" option in dizzy.inf file (enumerate languages names, separated by commas, as you want them to appear in the setup).
+
+	docs:
+	- fixed small errors and updated for the changes
+	- added info about fonts
+	
+	template:
+!	- added the "font" folder containing the "4 font.fnt" file.
+!	- changed the "4 font.tga" tile from tiles/menu folder with a bigger one, to easy support all ASCII set of characters
+!	- added FONT_DEFAULT define in gamedef.gs (4)
+!	- changed dialogs.gs, handlers.gs, menus.gs and start.gs to accomodate the new font support and the changes in HudDrawTile, HudDrawText, HudGetTextWidth and HudGetTextHeight
+		
+	OBS: to upgrade v2.1 games to DizzyAGE v2.2 you should:
+	- add the fonts folder with the "4 font.fnt" file
+	- replace the old "4 font.tga" tile from tiles/menu folder with the new one, provided with this new template
+	- if your game was mapping brushes from this tile, remap them with the new one
+	- if you want to keep the old "4 font.tga" you will need to generate an appropriate .fnt for it.
+	- adjust the script files that had been changed to support custom fonts and add the FONT_DEFAULT define in gamedef.gs
+	- take care of HudDrawTile and HudDrawText calls, that now use the tile id, not it's index. See the HudDraw handler and the dialogs.gs.
+	- take care of any use you had for HudGetTextWidth and HudGetTextHeight, since now they return the size of text in pixels
+	- optionally, add in dizzy.inf, game_languages = english, if your game is in english
+	- release your games with the cpu cool option activated (cool=1 in dizzy.ini) to cool people's processors :)
+	- update the game's readme.txt file with info about joystick dead zones (see the provided readme.txt file)
+	
+080210 v2.1.1	patch version
+	- fixed bug in editor on resize map
+	- moved room sizes in the map info dialog (require resize to change)
+	- fixed change properties dialog to use double-value check boxes (not triple vale)
+	- fixed a bug in the custom browser for room properties.
+	- fixed a bug in the input module, to accept gamepads and joysticks more easily
+	- fixed a bug that prevented numpad keys to be used in editor edit controls
+	
+	OBS: 
+	- only editor (.exe and .pak) and it's docs have been changed.
+	- no changes are required to v2.1 games, not even the dizzyage_version version from the dizzy.inf (just use the new dizzy.exe)
+	
+080201 v2.1		release version
+
+	game engine:
+	- included the rooms numeric properties in the game engine, similar to room names
+	- exported R_MAX (8) and RoomSet and RoomGet to access room properties
+	
+	editor:
+	- fix: call custom browse on room properties only on mouse right click (on the edit item)
+	
+	template:
+	- updated the roomprops.gs and other script files using it (handlers.gs, start.gs)
+	- added defines for room .nam .rp and .rt files
+	- always save room props in the saved game (no more use of SUPPORT_ROOMPROPS)
+
+080127 v2.1r	release candidate
+
+	game engine:
+	- fixed bad bug in GS9 script in the tabdel function
+	- fixed music fade bug, when using Alt+TAB, during a fade in (the sound volume was remaining low, when the app was re-activated).
+	- accepts MusicPlay(-1) that will stop the playing music with current fade settings and not play another one. (MusicStop doesn't do fade)
+	- property defines O_DEATH and P_DEATH exported to script (no longer defined in the default template)
+	- property define B_ANIM exported to script (same as O_ANIM)
+	- afxres.h file added in engine C/C++ sources, useful if VisualStudio has no MFC installed (hope it works on VisualStudio Express too).
+	
+	editor:
+	- fixed bad bug, when using Ctrl+X (last brushes) and Ctrl+V, after deleting more brushes. (crash)
+	- fixed markers that were lost when opening a map with markers (F2, ctrl+F2).
+	- improved map scroll and use ctrl+arrows to scroll with one whole room
+	- list the new exported DEATH property, in brush properties dialogs.
+	- brush search dialog better reports selected and unselected counts, and it's now accessible with the Ctrl+F shortcut (edit mode)
+	- brush search dialog suppotrs negation - search brushes with properties values, different that those selected (very usefull)
+	- renamed an insignificant text and define from "colider" to "collider"
+	- room properties dialog (ctrl+R) with room name, 4 custom texts and 8 numeric properties. Saved in dizzy.nam, dizzy.rt and dizzy.rp
+	- improved the editor.gs file from outside of the editor.pak with more user customization, including object classes and special browsers for brush user properties and room properties (callback functions).
+	- edit items support mouse right click action, used in room properties dialog, for calling custom browsers on texts and numeric properties.
+	- the COLOR brush property edit item accepts now hexadecimal values, more suitable for colors (like ff0000ff for opaque blue).
+	
+	template:
+	- full support for cause of death (optional), using properties (O_DEATH and P_DEATH) exported from engine (no longer consuming user properties for this)
+	- cause of death system uses PlayerDeathMessage and PlayerRespawn_DEATH callbacks, as introduced in v2.1b
+	- fixed a few bad pixels on the boots of dizzy eating tile
+	- support for room numeric properties (8 integers per room, comming from dizzy.rp). Use with RoomSet and RoomGet. If you need them saved enable it from gamedef.gs. For more derails, see roomprops.gs
+	- support for room custom text properties (4 texts per room, comming from dizzy.rt). Received in the RoomSetCustomText callback. For more info see roomprops.gs and game.gs
+	- added MUSIC_NONE (-1) define in sound.gs, for use to stop playing music with fade: MusicPlay(MUSIC_NONE);
+
+	tools:
+	- fixed pak to work with older versions (<2.0)
+	- fixed lots of bugs in audioworks (uses now some temporary files, before ym compressing)
+	
+	OBS: games upgraded to DizzyAGE v2.1b should do the followings:
+	- remove O_DEATH and P_DEATH from scripts (since they are now exported from engine)
+	- edit the map in the map editor and move DEATH values (for kill and hurt objects), from the first user property, to the new DEATH property.
+	- taking advantage of the rest of the cause of death system, is optional (can keep old systems)
+	- update the dizzy eating tile, if used (bad boots pixels fixed)
+	- take advantage of the new room properties and custom texts if needed
+	- try to keep as close as possible to the default template, for easy upgrades (use file comparation software, like TotalCommander, to spot differences).
+		
+080106 v2.1b 	beta version
+
+	game engine:
+	- fixed major bug in game's script interpreter, that was leading to stack overflow when using latent requests (thanks Jamie)
+	- display debug info with stack size ( "sp=", after the latent running call path)
+	- fixed debug density draw mode (F4) to skip burshes that don't write in materialmap
+	- use static brushes B_FRAME property to make a difference in the animation's frame (to support non-sincronized static brushes)
+	- use the value of B_FRAME property for static brushes, when painting them on the material map, not frame 0 as before. Still not animated. (IMPORTANT: the frame property now counts)
+	- support both ` and F2 keys for debug console ( ` doesn't work under some conditions on UK keyboards and Vista)
+	
+	editor:
+	- fixed bug for unknown class names 
+	- fixed display of room coordinates, when using edit tool (exported EDI_AXEX, EDI_AXEY and used them in gamemod.gs)
+	- grow edit box limit for long paths in the options dialog (dlgoptions.gs ln.88)
+	- debug option for showing brushes rectangles, usefull for hard to see brushes (like black on black, or too transparent)
+	- shortcut key sysmenu=[`] or [1] and view mode=[2]
+	- shortcut key for reloading the tiles: sysmenu=[`] or [1], options=[P], and then, reload tiles=[R]
+	- dispaly the placed brushes using their FRAME property, not frame 0, as before.
+	
+	template:
+	- request collider callback only if function exists, to avoid unnecessary request overwrites, for multiple colliders (see observation in script)
+	- display message when could not drop an object, because player is unstable or unsafe ("you can't drop this now") in action.gs
+	- moved the messages functions from dialogs.gs into messages.gs, so the user could add more custom messages in this file.
+	- support for AfterUpdateRoom_RX_RY callback, called from HandlerAfterUpdate() in handlers.gs
+	- clamped displayed credits to 3, in the HandlerDrawHud (to avoid bad looking overdraw, if more credits picked up or cheated)
+	- adjusted IsPlayerSafe() to allow more materials (since they were no danger, like MAT_HURT or MAT_KILL)
+	- adjusted IsPlayerStable() to consider the climb material as stable. 
+	- objects can now be droped down under more relaxed contitions (see the two adjustments above)
+	- SetPlayerPos() now forces the received x value to a multiple of 4 pixels (since player should move from 4 to 4 pixels).
+	- PlayerPlayStun() does not plays the stunned animation, if player is already dead, 
+	- and so does PlayerPlayAnimFrames() (optional), to break a stunned animation if player dies during one.
+	- adjusted PlayerLoseLife to suppord PlayerDeathMessage and PlayerRespawn callbacks, according to the P_DEATH player's property (previous behaviour, by default).
+	- added default PlayerDeathMessage callback in game.gs, with previous death message, by default.
+
+    OBS:
+    - games made for DizzyAGE v2.0 should be compatible with v2.1b
+    - check the FRAME properties of static brushes, because this value is used instead of frame 0, to paint in the material map, and as an animation offset
+      if in your game, all static brushes have the frame property set to 0, there's nothing to adjust.
+    - upgrading to the new default template is recomended, but not necessary.
+    - if you upgrade to the new default template, remember that now, player can drop items while standing on climb materials and PlayerSetPos auto-sets player at multiple of 4 pixels
+    - if you need death cause messages and custom respawns, you can use the new callbacks
+
+070916 v2.0		DizzyAGE2 release version
+	
+	- fixed some F10 problems
+	- fixed bug in GS9 (gs_findfiles)
+	- fixed word spell COLOR_YELLOW in def.gs (was yelow)
+	- fixed some tiles for wrong or too many colors (instead of only black and white, for example)
+	- removed game_protection from dizzy.inf, password is now given directly in the PAK tool, that was also updated
+	- renamed map props in editor to mapx1, mapy1, mapx2, mapy2, because that's what they are
+	- updated documentation
+	- updated website with articles and others
+	- updated demo games and tech demos
+
+070430 v2.0b	DizzyAGE2 beta testing version
+
+	- fixed bug in rooms partitioning
+	- fixed bug in keyboard keys to ascii conversion
+	- fixed bug in editor's scripts, default roomw define was 204 instead 240 but the editor.ini was helping it
+	- fixed DirectX problem with transformed vertices, on some video cards (beta2)
+	- fixed bug in editor's palette browser (beta2)
+	- fixed bug in editor (loosing device) (beta3)
+	- fixed bug in editor on pixel perfect lines, ati vs nvidia (beta3)
+	
+	- video support for both DirectX9 and OpenGL
+	- upgraded GS9 to v2.0, (ptr type for files, and some bug fixes)
+	- rewritten audio flow, to be similar to the tiles, using special naming format with unique ids
+	- changes in music play function, music position and loop handler supported
+	- rised the properties number to 48, instead of 40 before
+	- scale property (14) support
+	- flip property supports 90 degree rotation, on bit 3, so values up to 7 are accepted
+	- remapped the select property (from 14 to 15)
+	- SHADER_OPAQUE has now value 0 and SHADER_BLEND has value 1
+	- KeyboardStatus returns now only 0=up and 1=down (just down=2 was removed)
+	- separate support for KEY_UP (K/up arrow), KEY_DOWN (M/down arrow) and KEY_JUMP(space) 
+	- player color support
+	- player supports custom scripted movement, through the P_CUSTOMMOVE property
+	- custom room size support through G_VIEWX, G_VIEWY, G_ROOMW, and G_ROOMH game properties
+	- integrated developer console
+
+	- editor still supports old maps
+	- editor supports scrolling with the mouse on the side scroll bars
+	- editor saves the zooming state of the markers (f2, ctrl+f2)
+	- editor asks exit confirmation on alt+f4
+	- editor has it's data packed in editor.pak
+	- editor supports user scripts through editor.gs
+	- editor supports zooming with both + and - from main keyboard and numpad (laptop need)
+	- editor saves .brs file with all brushes having valid ids 
+	
+	- dizzy.inf file with game info, some used by the setup application
+	- updated configuration file, dizzy.ini
+	- setup application updated to work with new ini file
+
+	- the main script file, loaded by the engine, is now dizzy.gs instead of game.gs.
+	- default template rearranged (some removed, some added, other moved), for better organization
+	- gamedef.gs contains game specific defines, for easy user access
+	- game.gs contains all game's specific functions, for easy access (objects.gs and rooms.gs were removed)
+	- begin, save and load callbacks in game.gs
+	- unique game id to avoid loading old versions of saved games
+	- load and save deal with brushes from the .brs file exported by the editor and containing brushes with valid ids.
+	- saves and loads current music and it's position and also handles this on player's respawn
+	- water play, with swimming dizzy 5 style
+	- updated tiles (187, 188, 237!, 238!), aqua tiles, etc
+	
+	- "Dizzy and the Mushroom Pie" upgraded (an so other games)
+	
+061018 v1.31	dual core fix							
+
+	- fixed some code that was not thread safe and that may cause crashes on some dual core processors
+	- if vertex buffer fails on some weird video drivers, the old software buffer is used
+
+061001 v1.3		flicker problem
+
+	- some video cards/drivers experienced some flickering on texts and brushes
+	- it was solved using a vertex buffer (hardware where available) for batching primitives
+	- manual was not updated
+	- version v1.3 is fully compatible with old v1.2 games
+	- all v1.2 games should run on this version without any change to data or scripts
+							
+060601 v1.2		major upgrade
+
+	- new ym library version (nothing visible)
+	- materialmap access from script (MaterialRead)
+	- player allows vertical flip flags in P_FLIP (bit 0=X, 1=Y)
+	- player have now a P_SHADER variable
+	- custom DrawHud handler with draw tile and draw text functions
+	- font is used as a tile through HudDrawText function
+	- font was extended to 64x128 pixels and 128 characters (from 32 to 160)
+	- enough space for foreign characters in the font tile
+	- the space character (32) is now 8 pixels wide like the rest of the font, so some messages may result be wider
+	- the texts may use lowercase characters, but by default they look the same with uppercase characters
+	- dialogs are also custom draw from the DrawHud handler
+	- access to all dialogs in the dialog stack
+	- keyboard status access functions
+	- the objects (dynamic brushes) are now considered (update,draw,collision) only they are located in the current room when entered.
+	- user can force from script any objcet into consideration, using ObjPresent function (like when dropping an item from inventory).
+	- iteration of dynamic objects present in the current room, using ObjPresentCount and ObjPresentIdx, may save CPU power.
+	- this allows huge number of dynamic objects spread on the map, without CPU penalty.
+	- no more fixed tile ids (like the loading screen or menu tiles)
+	- shaders are no longer customizable for future platforms compatibility
+	- shaders have been updated to: blend (old color), opaque, additive (old light), modulative (new), modulative2 (new)
+	- the old shader called material (that displayed only the alpha channel) is no longer available for users since it was not supported by any platforms or hardware
+	- custom load for tiles and map, specifying path and file
+	- this allows games to split the tiles and the map on multiple levels if memory usage request it
+	- latent GameStartLoad script function allows loading screen
+	- files from font and shaders directories have been moved into engine directory, and are not customizable
+	- game variables are now reseted by users in the GameStart handler
+	- this way some of them may be kept static and not reseted when restarting the game
+	- some game variables have been eliminated (like those used for menu tiles and positions)
+	- adjusted update player flow so now the collision handlers are called before palyer's update
+	- version file required in the DATA folder, containig the version number (ex: v1.2) of the required DizzyAGE engine version
+	- an warning will be displayed at startup, if the version required by the game don't match the running engine's version
+	- if the file is missing, version v1.1 is assumed
+	
+	- default templated have been modified
+	- improved the player safe position mechanism (P_SAFE)
+	- default support for hurt and kill object classes on collision handler
+	- death cause mechanism is now partially implemented (P_DEATH)
+	- compatibility with v1.1 games requires some minor modifications over the game's script
+	- old games (v1.1) are recomanded to be upgraded to this version of engine
+	- previous saved game files of old games (v1.1) will no longer be loaded (if upgraded to v1.2) without very special load/save adjusting
+	- small adjustment on PlayerPlayStun to consider only hard hits
+	- load room names saved from editor
+	- adjusted some comments
+	
+	- editor renamed layer buttons (0..7)
+	- editor pick tile on right click, like pick color
+	- editor quick block/unblock on right click
+	- editor shortcuts keys on the right click menu
+	- editor allows naming the rooms (ctrl+R) so they can be loaded in the game script
+	- editor have two tile paths in options dialog (for multilevel games: common tiles and level tiles)
+	- editor fix undo issue when using btush to back or to front
+	- editor uses windows clipboard to copy/paste brushes even between different editor instances
+	- editor fix issue with markes and zoom
+	
+	- documentation have been updated
+
+060501 v1.1		bug fixes and litle more
+
+	- fixed YM lib bug (DIV_BY_ZERO)
+	- fixed music volume bug
+	- added HandlerGameAfterUpdate
+	- added GameSetName to set the window's name
+
+060306 v1.0		first release version
+
+060205 v1.0b	beta testing version
+
+------------------------------------------------------------------------------

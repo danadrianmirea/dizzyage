@@ -1,0 +1,12 @@
+game_title			= Default Template
+game_version		= 1.0
+game_author			= Alexandru Simion
+game_website		= http://www.yolkfolk.com/dizzyage
+game_about			= "DizzyAGE created by\nAlexandru and Cristina Simion\nhttp://www.yolkfolk.com/dizzyage"
+game_shortcut		= Template
+game_languages		= english
+game_screen_bw 		= 320
+game_screen_bh 		= 240
+game_screen_w 		= 256
+game_screen_h 		= 192
+dizzyage_version	= 2.4
