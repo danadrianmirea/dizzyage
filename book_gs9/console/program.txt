@@ -1,0 +1,5 @@
+// a simple program
+func main()
+{
+	println("Hello World!");
+}
