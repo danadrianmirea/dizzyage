@@ -231,7 +231,7 @@ Loading fonts from "data\fonts\" (group=0)
 Fonts report: total=1, failed=0 (duplicates=0)
 
 Loading map "data\map\dizzy.map"
-  map=5x3, room=240x136, brushes=10, objects=0
+  map=5x3, room=240x136, brushes=9, objects=2
 Loading map SUCCESSFUL!
 
 

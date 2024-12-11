@@ -11,7 +11,7 @@
 
 #def MAXCREDITS			3		// max number of credits
 #def MAXCOINS			4		// max number of coins or diamonds to find (set it to the number of coins you added in your map)
-#def MAXINVENTORY		3		// max number of inventory items ( max 10 items )
+#def MAXINVENTORY		5		// max number of inventory items ( max 10 items )
 #def LOADINGTIME		1		// minimum number of seconds to wait on the loading page
 #def MUSIC_DEFAULT		1		// id of the default music, for more details see the sound.gs file
 #def FONT_DEFAULT		4		// id of the default font
@@ -20,7 +20,7 @@
 #def PLAYER_MAINMENUX	400		// set the player's position x in the mainmenu room (attract mode room)
 #def PLAYER_MAINMENUY	246		// set the player's position y in the mainmenu room (attract mode room)
 #def PLAYER_LAYER		5		// set the player's layer in the game (player gets painted last in it's layer)
-#def PLAYER_BEGINX		640		// set the starting positon x of the player in map (when a new game begins)
+#def PLAYER_BEGINX		540		// set the starting positon x of the player in map (when a new game begins)
 #def PLAYER_BEGINY		246		// set the starting positon y of the player in map (when a new game begins)
 #def PLAYER_BUBBLES		12		// set this to the count of air bubble objects you placed in the map. used in WaterPlay
 
