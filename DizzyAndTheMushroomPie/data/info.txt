@@ -1,0 +1,40 @@
+OBJECTS IDS:
+
+100 lift bottom
+101 lift top
+102 lift chain
+103 dylan
+105 boat
+110 bat 1
+111 bat 2
+120 blocker action
+121 block rock 1
+122 block rock 2
+123 block rock 3
+124 blocker (brush !)
+125 cave music 1
+126 cave music 2
+127 outside music
+130 troll
+140 daisy
+145 grand dizzy
+146 spider chain
+147 spider
+
+150 boat waypoint 1
+151 boat waypoint 2
+152 bat 1 waypoint 1
+153 bat 1 waypoint 2
+154 bat 2 waypoint 1
+155 bat 2 waypoint 2
+156 lift top waypoint 1
+157 lift top waypoint 2
+158 lift bottom waypoint 1
+159 lift bottom waypoint 2
+
+// items
+200 pickaxe
+201 elevator key
+202 pile of grass
+203 mushrooms
+204 pie

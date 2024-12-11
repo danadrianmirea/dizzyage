@@ -147,6 +147,56 @@ func BeginNewGame()
 // Interactions
 /////////////////////////////////////////////////////////////////////////////////
 
-//...
+func ActionObject_110() // daisy
+{
+	objidx = ObjFind(110);
+	status = ObjGet(objidx,O_STATUS);
+	if(status==0) 
+	{
+		PlayerEnterIdle();
+		Message1(2,5,"\"HELLO, DAISY!\"");
+		MessagePop();
+		Message2(10,4,"\"HELLO, DIZZY!\""); 
+		MessagePop();
+		Message2(4,4,"\"COULD YOU PLEASE BRING ME\nTHE BREAD?.\""); 
+		MessagePop();
+		Message1(0,2,"\"SURE, DAISY,\nJUST LET ME FIND IT.\"");
+		MessagePop();
+		ObjSet(objidx,O_STATUS,1);
+	}
+	else
+	{
+		idx = OpenDialogInventory();
+		if(idx!=-1)	UseObject(idx);
+		return; // not spoken to him yet or already paid him
+	}	
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// DAISY id=110
+// status 0=waiting for bread, 1=got the bread
+/////////////////////////////////////////////////////////////////////////////////
+func UseObject_110( idx ) // daisy
+{
+	objidx = ObjFind(110);
+	status = ObjGet(objidx,O_STATUS);
+	if(ObjGet(idx,O_ID)!=101)
+	{
+		if(status==0)
+		{
+			Message2(20,2,"\"DIZZY, WHERE IS\nTHE BREAD?\"");
+			MessagePop();
+			return;
+		}
+	}
+
+	SamplePlay(FX_SUCCESS);
+	PlayerEnterIdle();
+	Message1(2,6,"\"LOOK, DAISY!\nI GOT THE BREAD!\"");
+	MessagePop();
+	InventorySub(idx);
+	Message2(20,2,"\"THANKS, DIZZY!\"");
+	MessagePop();
+}
 
 /////////////////////////////////////////////////////////////////////////////////

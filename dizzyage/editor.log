@@ -323,3 +323,48 @@ APP: activate on
 APP: activate off
 APP: activate on
 APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+Saving map ...
+Saving brushes ids ...
+Saving map SUCCESSFUL!
+APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+Loading map ...
+Loading map SUCCESSFUL!
+APP: activate off
+APP: activate on
+APP: activate off
+APP: activate on
+Saving map ...
+Saving brushes ids ...
+Saving map SUCCESSFUL!
+
+Main loop finished.
+editor done.
+Render done.
+Render done interface.
+Input done.
+Files done.
+App done.
+----------------------------------------------------------------------
+MEMORY REPORT  (900 Kb used)
+----------------------------------------------------------------------
+------------------------------------------
+| RENE DEBUG DONE                        |
+------------------------------------------

@@ -231,7 +231,7 @@ Loading fonts from "data\fonts\" (group=0)
 Fonts report: total=1, failed=0 (duplicates=0)
 
 Loading map "data\map\dizzy.map"
-  map=5x3, room=240x136, brushes=9, objects=2
+  map=5x3, room=240x136, brushes=8, objects=3
 Loading map SUCCESSFUL!
 
 
@@ -243,7 +243,7 @@ Input done.
 Files done.
 App done.
 ----------------------------------------------------------------------
-MEMORY REPORT  (2338 Kb used)
+MEMORY REPORT  (2342 Kb used)
 ----------------------------------------------------------------------
 ------------------------------------------
 | RENE DEBUG DONE                        |
