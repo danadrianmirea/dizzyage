@@ -1,0 +1,11 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  YmUserInterface.cpp
+  YmMusic.cpp
+  Ymload.cpp
+  Ym2149Ex.cpp
+  LzhLib.cpp
+  digidrum.cpp
+  Generating Code...
+C:\adi\src\dizzy\dizzyage_src\Libs\stsound\Ymload.cpp(38,57): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\stsound\Ymload.cpp(70,12): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  StSoundLibrary.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\stsound\Debug\StSoundLibrary.lib

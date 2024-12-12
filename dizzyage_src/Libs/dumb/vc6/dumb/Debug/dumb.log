@@ -1,0 +1,51 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  xmeffect.c
+  readxm2.c
+  readxm.c
+  reads3m2.c
+  reads3m.c
+  readmod2.c
+  readmod.c
+  loadxm2.c
+  loadxm.c
+  loads3m2.c
+  loads3m.c
+  loadmod2.c
+  loadmod.c
+  itunload.c
+  itrender.c
+  itread2.c
+  itread.c
+  itorder.c
+  itmisc.c
+  itload2.c
+  Generating Code...
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\it\itread.c(233,34): warning C4244: '=': conversion from 'long' to 'byte', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\it\itread.c(242,32): warning C4244: '=': conversion from 'long' to 'byte', possible loss of data
+  Compiling...
+  itload.c
+  stdfile.c
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\helpers\stdfile.c(28,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  silence.c
+  sampbuf.c
+  resample.c
+  memfile.c
+  clickrem.c
+  unload.c
+  rendsig.c
+  rendduh.c
+  register.c
+  readduh.c
+  rawsig.c
+  makeduh.c
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\core\makeduh.c(123,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\core\makeduh.c(126,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  loadduh.c
+  dumbfile.c
+  duhtag.c
+  duhlen.c
+  atexit.c
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1554,5): warning MSB8012: TargetPath(C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\Debug\dumb.lib) does not match the Library's OutputFile property value (C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\Debug\dumbd.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1556,5): warning MSB8012: TargetName(dumb) does not match the Library's OutputFile property value (dumbd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  dumb.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\Debug\dumb.lib

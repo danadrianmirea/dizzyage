@@ -1,0 +1,7 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  framing.c
+  bitwise.c
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1554,5): warning MSB8012: TargetPath(C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\Static_Debug\ogg_static.lib) does not match the Library's OutputFile property value (C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\Static_Debug\ogg_static_d.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1556,5): warning MSB8012: TargetName(ogg_static) does not match the Library's OutputFile property value (ogg_static_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  ogg_static.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\Static_Debug\ogg_static.lib

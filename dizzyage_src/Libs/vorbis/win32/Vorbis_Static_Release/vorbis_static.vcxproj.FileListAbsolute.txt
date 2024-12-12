@@ -1,0 +1,1 @@
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\Vorbis_Static_Release\vorbis_static.lib

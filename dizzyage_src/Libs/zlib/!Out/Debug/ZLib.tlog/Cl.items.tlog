@@ -1,0 +1,16 @@
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\adler32.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\adler32.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\compress.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\compress.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\crc32.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\crc32.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\deflate.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\deflate.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\gzio.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\gzio.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\infblock.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\infblock.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\infcodes.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\infcodes.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\inffast.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\inffast.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\inflate.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\inflate.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\inftrees.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\inftrees.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\infutil.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\infutil.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\trees.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\trees.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\uncompr.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\uncompr.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\unzip.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\unzip.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\zip.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\zip.obj
+C:\adi\src\dizzy\dizzyage_src\Libs\zlib\zutil.c;C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\zutil.obj

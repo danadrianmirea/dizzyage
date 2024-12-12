@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          Migration Report
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          Migration Report - Libs</h1><div id="content"><h2 _locID="OverviewTitle">Overview</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">Project</th><th _locID="PathTableHeader">Path</th><th _locID="ErrorsTableHeader">Errors</th><th _locID="WarningsTableHeader">Warnings</th><th _locID="MessagesTableHeader">Messages</th></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#dumb">dumb</a></strong></td><td>..\..\Libs\dumb\vc6\dumb\dumb.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#dumbWarning">8</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('dumb'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#ogg_static">ogg_static</a></strong></td><td>..\..\Libs\ogg\win32\ogg_static.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#ogg_staticWarning">8</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('ogg_static'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#vorbis_static">vorbis_static</a></strong></td><td>..\..\Libs\vorbis\win32\vorbis_static.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#vorbis_staticWarning">8</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('vorbis_static'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#vorbisfile_static">vorbisfile_static</a></strong></td><td>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#vorbisfile_staticWarning">8</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('vorbisfile_static'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#ljpeg">ljpeg</a></strong></td><td>..\..\Libs\ljpeg\ljpeg.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#ljpegWarning">7</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('ljpeg'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#lpng">lpng</a></strong></td><td>..\..\Libs\lpng\lpng.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#lpngWarning">7</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('lpng'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#StSoundLibrary">StSoundLibrary</a></strong></td><td>..\..\Libs\stsound\StSoundLibrary.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#StSoundLibraryWarning">7</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('StSoundLibrary'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#ZLib">ZLib</a></strong></td><td>..\..\Libs\zlib\ZLib.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#ZLibWarning">7</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('ZLib'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#Solution"><span _locID="OverviewSolutionSpan">Solution</span></a></strong></td><td>Libs.sln</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#SolutionWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Solution'); return false;">2</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">Solution and projects</h2><div id="messages"><a name="dumb" /><h3>dumb</h3><table><tr id="dumbHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassdumb"><td class="IconWarningEncoded"><a name="dumbWarning" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.</span></td></tr><tr name="WarningRowClassdumb"><td class="IconWarningEncoded"><a name="dumbWarning" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.</span></td></tr><tr name="WarningRowClassdumb"><td class="IconWarningEncoded"><a name="dumbWarning" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassdumb"><td class="IconWarningEncoded"><a name="dumbWarning" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('dumb') does not match the Librarian's OutputFile property value 'Debug\dumbd.lib' ('dumbd') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassdumb"><td class="IconWarningEncoded"><a name="dumbWarning" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\Debug\dumb.lib') does not match the Librarian's OutputFile property value 'Debug\dumbd.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Debug\dumbd.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassdumb"><td class="IconWarningEncoded"><a name="dumbWarning" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\Debug\dumb.lib') does not match the Linker's OutputFile property value '.\Debug\dumb.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Debug\dumb.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassdumb"><td class="IconWarningEncoded"><a name="dumbWarning" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\Release\dumb.lib') does not match the Librarian's OutputFile property value '.\Release\dumb.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Release\dumb.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassdumb"><td class="IconWarningEncoded"><a name="dumbWarning" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\Release\dumb.lib') does not match the Linker's OutputFile property value '.\Release\dumb.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Release\dumb.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowdumb"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="dumbMessage" onclick="ToggleMessageVisibility('dumb'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassdumb" style="display: none"><td class="IconInfoEncoded"><a name="dumbMessage" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>Converting project file 'C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\dumb.vcproj'.</span></td></tr><tr name="MessageRowClassdumb" style="display: none"><td class="IconInfoEncoded"><a name="dumbMessage" /></td><td class="messageCell"><strong>..\..\Libs\dumb\vc6\dumb\dumb.vcproj:
+        </strong><span>Done converting to new project file 'C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\dumb.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidedumb"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="dumbMessage" onclick="ToggleMessageVisibility('dumb'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="ogg_static" /><h3>ogg_static</h3><table><tr id="ogg_staticHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassogg_static"><td class="IconWarningEncoded"><a name="ogg_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.</span></td></tr><tr name="WarningRowClassogg_static"><td class="IconWarningEncoded"><a name="ogg_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.</span></td></tr><tr name="WarningRowClassogg_static"><td class="IconWarningEncoded"><a name="ogg_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassogg_static"><td class="IconWarningEncoded"><a name="ogg_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('ogg_static') does not match the Librarian's OutputFile property value 'Static_Debug\ogg_static_d.lib' ('ogg_static_d') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassogg_static"><td class="IconWarningEncoded"><a name="ogg_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\Static_Debug\ogg_static.lib') does not match the Librarian's OutputFile property value 'Static_Debug\ogg_static_d.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Static_Debug\ogg_static_d.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassogg_static"><td class="IconWarningEncoded"><a name="ogg_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\Static_Debug\ogg_static.lib') does not match the Linker's OutputFile property value '.\Static_Debug\ogg_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Static_Debug\ogg_static.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassogg_static"><td class="IconWarningEncoded"><a name="ogg_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\Static_Release\ogg_static.lib') does not match the Librarian's OutputFile property value '.\Static_Release\ogg_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Static_Release\ogg_static.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassogg_static"><td class="IconWarningEncoded"><a name="ogg_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\Static_Release\ogg_static.lib') does not match the Linker's OutputFile property value '.\Static_Release\ogg_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Static_Release\ogg_static.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowogg_static"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="ogg_staticMessage" onclick="ToggleMessageVisibility('ogg_static'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassogg_static" style="display: none"><td class="IconInfoEncoded"><a name="ogg_staticMessage" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>Converting project file 'C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\ogg_static.vcproj'.</span></td></tr><tr name="MessageRowClassogg_static" style="display: none"><td class="IconInfoEncoded"><a name="ogg_staticMessage" /></td><td class="messageCell"><strong>..\..\Libs\ogg\win32\ogg_static.vcproj:
+        </strong><span>Done converting to new project file 'C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\ogg_static.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideogg_static"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="ogg_staticMessage" onclick="ToggleMessageVisibility('ogg_static'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="vorbis_static" /><h3>vorbis_static</h3><table><tr id="vorbis_staticHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassvorbis_static"><td class="IconWarningEncoded"><a name="vorbis_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.</span></td></tr><tr name="WarningRowClassvorbis_static"><td class="IconWarningEncoded"><a name="vorbis_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.</span></td></tr><tr name="WarningRowClassvorbis_static"><td class="IconWarningEncoded"><a name="vorbis_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassvorbis_static"><td class="IconWarningEncoded"><a name="vorbis_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('vorbis_static') does not match the Librarian's OutputFile property value 'Vorbis_Static_Debug\vorbis_static_d.lib' ('vorbis_static_d') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassvorbis_static"><td class="IconWarningEncoded"><a name="vorbis_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\Vorbis_Static_Debug\vorbis_static.lib') does not match the Librarian's OutputFile property value 'Vorbis_Static_Debug\vorbis_static_d.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Vorbis_Static_Debug\vorbis_static_d.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassvorbis_static"><td class="IconWarningEncoded"><a name="vorbis_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\Vorbis_Static_Debug\vorbis_static.lib') does not match the Linker's OutputFile property value '.\Vorbis_Static_Debug\vorbis_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Vorbis_Static_Debug\vorbis_static.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassvorbis_static"><td class="IconWarningEncoded"><a name="vorbis_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\Vorbis_Static_Release\vorbis_static.lib') does not match the Librarian's OutputFile property value '.\Vorbis_Static_Release\vorbis_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Vorbis_Static_Release\vorbis_static.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassvorbis_static"><td class="IconWarningEncoded"><a name="vorbis_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\Vorbis_Static_Release\vorbis_static.lib') does not match the Linker's OutputFile property value '.\Vorbis_Static_Release\vorbis_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Vorbis_Static_Release\vorbis_static.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowvorbis_static"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="vorbis_staticMessage" onclick="ToggleMessageVisibility('vorbis_static'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassvorbis_static" style="display: none"><td class="IconInfoEncoded"><a name="vorbis_staticMessage" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>Converting project file 'C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\vorbis_static.vcproj'.</span></td></tr><tr name="MessageRowClassvorbis_static" style="display: none"><td class="IconInfoEncoded"><a name="vorbis_staticMessage" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbis_static.vcproj:
+        </strong><span>Done converting to new project file 'C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\vorbis_static.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidevorbis_static"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="vorbis_staticMessage" onclick="ToggleMessageVisibility('vorbis_static'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="vorbisfile_static" /><h3>vorbisfile_static</h3><table><tr id="vorbisfile_staticHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassvorbisfile_static"><td class="IconWarningEncoded"><a name="vorbisfile_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.</span></td></tr><tr name="WarningRowClassvorbisfile_static"><td class="IconWarningEncoded"><a name="vorbisfile_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.</span></td></tr><tr name="WarningRowClassvorbisfile_static"><td class="IconWarningEncoded"><a name="vorbisfile_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassvorbisfile_static"><td class="IconWarningEncoded"><a name="vorbisfile_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('vorbisfile_static') does not match the Librarian's OutputFile property value 'VorbisFile_Static_Debug\vorbisfile_static_d.lib' ('vorbisfile_static_d') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassvorbisfile_static"><td class="IconWarningEncoded"><a name="vorbisfile_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\VorbisFile_Static_Debug\vorbisfile_static.lib') does not match the Librarian's OutputFile property value 'VorbisFile_Static_Debug\vorbisfile_static_d.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\VorbisFile_Static_Debug\vorbisfile_static_d.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassvorbisfile_static"><td class="IconWarningEncoded"><a name="vorbisfile_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\VorbisFile_Static_Debug\vorbisfile_static.lib') does not match the Linker's OutputFile property value '.\VorbisFile_Static_Debug\vorbisfile_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\VorbisFile_Static_Debug\vorbisfile_static.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassvorbisfile_static"><td class="IconWarningEncoded"><a name="vorbisfile_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\VorbisFile_Static_Release\vorbisfile_static.lib') does not match the Librarian's OutputFile property value '.\VorbisFile_Static_Release\vorbisfile_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\VorbisFile_Static_Release\vorbisfile_static.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassvorbisfile_static"><td class="IconWarningEncoded"><a name="vorbisfile_staticWarning" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\VorbisFile_Static_Release\vorbisfile_static.lib') does not match the Linker's OutputFile property value '.\VorbisFile_Static_Release\vorbisfile_static.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\VorbisFile_Static_Release\vorbisfile_static.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowvorbisfile_static"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="vorbisfile_staticMessage" onclick="ToggleMessageVisibility('vorbisfile_static'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassvorbisfile_static" style="display: none"><td class="IconInfoEncoded"><a name="vorbisfile_staticMessage" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>Converting project file 'C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\vorbisfile_static.vcproj'.</span></td></tr><tr name="MessageRowClassvorbisfile_static" style="display: none"><td class="IconInfoEncoded"><a name="vorbisfile_staticMessage" /></td><td class="messageCell"><strong>..\..\Libs\vorbis\win32\vorbisfile_static.vcproj:
+        </strong><span>Done converting to new project file 'C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\vorbisfile_static.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidevorbisfile_static"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="vorbisfile_staticMessage" onclick="ToggleMessageVisibility('vorbisfile_static'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="ljpeg" /><h3>ljpeg</h3><table><tr id="ljpegHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassljpeg"><td class="IconWarningEncoded"><a name="ljpegWarning" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.</span></td></tr><tr name="WarningRowClassljpeg"><td class="IconWarningEncoded"><a name="ljpegWarning" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.</span></td></tr><tr name="WarningRowClassljpeg"><td class="IconWarningEncoded"><a name="ljpegWarning" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassljpeg"><td class="IconWarningEncoded"><a name="ljpegWarning" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\!Out\Debug\ljpeg.lib') does not match the Librarian's OutputFile property value '.\!Out\Debug\ljpeg.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Debug\ljpeg.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassljpeg"><td class="IconWarningEncoded"><a name="ljpegWarning" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\!Out\Debug\ljpeg.lib') does not match the Linker's OutputFile property value '.\!Out\Debug\ljpeg.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Debug\ljpeg.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassljpeg"><td class="IconWarningEncoded"><a name="ljpegWarning" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\!Out\Release\ljpeg.lib') does not match the Librarian's OutputFile property value '.\!Out\Release\ljpeg.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Release\ljpeg.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassljpeg"><td class="IconWarningEncoded"><a name="ljpegWarning" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\!Out\Release\ljpeg.lib') does not match the Linker's OutputFile property value '.\!Out\Release\ljpeg.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Release\ljpeg.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowljpeg"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="ljpegMessage" onclick="ToggleMessageVisibility('ljpeg'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassljpeg" style="display: none"><td class="IconInfoEncoded"><a name="ljpegMessage" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>Converting project file 'C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\ljpeg.vcproj'.</span></td></tr><tr name="MessageRowClassljpeg" style="display: none"><td class="IconInfoEncoded"><a name="ljpegMessage" /></td><td class="messageCell"><strong>..\..\Libs\ljpeg\ljpeg.vcproj:
+        </strong><span>Done converting to new project file 'C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\ljpeg.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideljpeg"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="ljpegMessage" onclick="ToggleMessageVisibility('ljpeg'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="lpng" /><h3>lpng</h3><table><tr id="lpngHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClasslpng"><td class="IconWarningEncoded"><a name="lpngWarning" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.</span></td></tr><tr name="WarningRowClasslpng"><td class="IconWarningEncoded"><a name="lpngWarning" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.</span></td></tr><tr name="WarningRowClasslpng"><td class="IconWarningEncoded"><a name="lpngWarning" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClasslpng"><td class="IconWarningEncoded"><a name="lpngWarning" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\lpng\!Out\Debug\lpng.lib') does not match the Librarian's OutputFile property value '.\!Out\Debug\lpng.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Debug\lpng.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClasslpng"><td class="IconWarningEncoded"><a name="lpngWarning" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\lpng\!Out\Debug\lpng.lib') does not match the Linker's OutputFile property value '.\!Out\Debug\lpng.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Debug\lpng.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClasslpng"><td class="IconWarningEncoded"><a name="lpngWarning" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\lpng\!Out\Release\lpng.lib') does not match the Librarian's OutputFile property value '.\!Out\Release\lpng.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Release\lpng.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClasslpng"><td class="IconWarningEncoded"><a name="lpngWarning" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\lpng\!Out\Release\lpng.lib') does not match the Linker's OutputFile property value '.\!Out\Release\lpng.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Release\lpng.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowlpng"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="lpngMessage" onclick="ToggleMessageVisibility('lpng'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClasslpng" style="display: none"><td class="IconInfoEncoded"><a name="lpngMessage" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>Converting project file 'C:\adi\src\dizzy\dizzyage_src\Libs\lpng\lpng.vcproj'.</span></td></tr><tr name="MessageRowClasslpng" style="display: none"><td class="IconInfoEncoded"><a name="lpngMessage" /></td><td class="messageCell"><strong>..\..\Libs\lpng\lpng.vcproj:
+        </strong><span>Done converting to new project file 'C:\adi\src\dizzy\dizzyage_src\Libs\lpng\lpng.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidelpng"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="lpngMessage" onclick="ToggleMessageVisibility('lpng'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="StSoundLibrary" /><h3>StSoundLibrary</h3><table><tr id="StSoundLibraryHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassStSoundLibrary"><td class="IconWarningEncoded"><a name="StSoundLibraryWarning" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.</span></td></tr><tr name="WarningRowClassStSoundLibrary"><td class="IconWarningEncoded"><a name="StSoundLibraryWarning" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.</span></td></tr><tr name="WarningRowClassStSoundLibrary"><td class="IconWarningEncoded"><a name="StSoundLibraryWarning" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassStSoundLibrary"><td class="IconWarningEncoded"><a name="StSoundLibraryWarning" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\stsound\Debug\StSoundLibrary.lib') does not match the Librarian's OutputFile property value '.\Debug\StSoundLibrary.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Debug\StSoundLibrary.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassStSoundLibrary"><td class="IconWarningEncoded"><a name="StSoundLibraryWarning" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\stsound\Debug\StSoundLibrary.lib') does not match the Linker's OutputFile property value '.\Debug\StSoundLibrary.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Debug\StSoundLibrary.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassStSoundLibrary"><td class="IconWarningEncoded"><a name="StSoundLibraryWarning" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\stsound\Release\StSoundLibrary.lib') does not match the Librarian's OutputFile property value '.\Release\StSoundLibrary.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Release\StSoundLibrary.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassStSoundLibrary"><td class="IconWarningEncoded"><a name="StSoundLibraryWarning" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\stsound\Release\StSoundLibrary.lib') does not match the Linker's OutputFile property value '.\Release\StSoundLibrary.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Release\StSoundLibrary.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowStSoundLibrary"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="StSoundLibraryMessage" onclick="ToggleMessageVisibility('StSoundLibrary'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassStSoundLibrary" style="display: none"><td class="IconInfoEncoded"><a name="StSoundLibraryMessage" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>Converting project file 'C:\adi\src\dizzy\dizzyage_src\Libs\stsound\StSoundLibrary.vcproj'.</span></td></tr><tr name="MessageRowClassStSoundLibrary" style="display: none"><td class="IconInfoEncoded"><a name="StSoundLibraryMessage" /></td><td class="messageCell"><strong>..\..\Libs\stsound\StSoundLibrary.vcproj:
+        </strong><span>Done converting to new project file 'C:\adi\src\dizzy\dizzyage_src\Libs\stsound\StSoundLibrary.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideStSoundLibrary"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="StSoundLibraryMessage" onclick="ToggleMessageVisibility('StSoundLibrary'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="ZLib" /><h3>ZLib</h3><table><tr id="ZLibHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassZLib"><td class="IconWarningEncoded"><a name="ZLibWarning" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.</span></td></tr><tr name="WarningRowClassZLib"><td class="IconWarningEncoded"><a name="ZLibWarning" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.</span></td></tr><tr name="WarningRowClassZLib"><td class="IconWarningEncoded"><a name="ZLibWarning" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassZLib"><td class="IconWarningEncoded"><a name="ZLibWarning" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\ZLib.lib') does not match the Librarian's OutputFile property value '.\!Out\Debug\ZLib.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Debug\ZLib.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassZLib"><td class="IconWarningEncoded"><a name="ZLibWarning" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Debug\ZLib.lib') does not match the Linker's OutputFile property value '.\!Out\Debug\ZLib.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Debug\ZLib.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassZLib"><td class="IconWarningEncoded"><a name="ZLibWarning" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Release\ZLib.lib') does not match the Librarian's OutputFile property value '.\!Out\Release\ZLib.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Release\ZLib.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassZLib"><td class="IconWarningEncoded"><a name="ZLibWarning" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Release\ZLib.lib') does not match the Linker's OutputFile property value '.\!Out\Release\ZLib.lib' ('C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\!Out\Release\ZLib.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowZLib"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="ZLibMessage" onclick="ToggleMessageVisibility('ZLib'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassZLib" style="display: none"><td class="IconInfoEncoded"><a name="ZLibMessage" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>Converting project file 'C:\adi\src\dizzy\dizzyage_src\Libs\zlib\ZLib.vcproj'.</span></td></tr><tr name="MessageRowClassZLib" style="display: none"><td class="IconInfoEncoded"><a name="ZLibMessage" /></td><td class="messageCell"><strong>..\..\Libs\zlib\ZLib.vcproj:
+        </strong><span>Done converting to new project file 'C:\adi\src\dizzy\dizzyage_src\Libs\zlib\ZLib.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideZLib"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="ZLibMessage" onclick="ToggleMessageVisibility('ZLib'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="Solution" /><h3 _locID="ProjectDisplayNameHeader">Solution</h3><table><tr id="SolutionHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassSolution"><td class="IconWarningEncoded"><a name="SolutionWarning" /></td><td class="messageCell"><strong>Libs.sln:
+        </strong><span>Visual Studio needs to make non-functional changes to this project in order to enable the project to open in released versions of Visual Studio newer than Visual Studio 2010 SP1 without impacting project behavior.</span></td></tr><tr name="MessageRowHeaderShowSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>Libs.sln:
+        </strong><span>File successfully backed up as C:\adi\src\dizzy\dizzyage_src\Workspace\VC8\Backup\Libs.sln</span></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>Libs.sln:
+        </strong><span>Solution migrated successfully</span></td></tr><tr style="display: none" name="MessageRowHeaderHideSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table></div></div></body></html>

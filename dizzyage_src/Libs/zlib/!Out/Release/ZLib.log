@@ -1,0 +1,19 @@
+﻿  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzio.c
+  infblock.c
+  infcodes.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  infutil.c
+  trees.c
+  uncompr.c
+  unzip.c
+  zip.c
+  zutil.c
+  Generating Code...
+  ZLib.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\zlib\!Out\Release\ZLib.lib
+          1 file(s) copied.

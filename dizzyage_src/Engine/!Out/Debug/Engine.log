@@ -1,0 +1,165 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  A9Def.cpp
+  A9Codec_ym.cpp
+  A9Codec_wav.cpp
+  A9Codec_ogg.cpp
+  A9Codec_dumb.cpp
+  A9Codec.cpp
+  A9AudioDX.cpp
+  A9Audio.cpp
+  R9TexturePool.cpp
+  R9RenderGL.cpp
+  R9RenderDX.cpp
+  R9Render.cpp
+  R9ImgLoader.cpp
+  R9Img.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9RenderGL.cpp(997,8): warning C4838: conversion from 'int' to 'BYTE' requires a narrowing conversion
+  (compiling source file '/Render/R9RenderGL.cpp')
+  
+  R9Font.cpp
+  I9InputDX.cpp
+  I9Input.cpp
+  I9FFDX.cpp
+  I9DeviceDX.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(266,8): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(271,8): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(276,8): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(477,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(478,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(479,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(480,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(481,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(482,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+  gsvm.cpp
+  Generating Code...
+  Compiling...
+  gsutil.cpp
+  gsparser.cpp
+  gsnode.cpp
+  gslib_win.cpp
+  gslib_math.cpp
+  gslib_file.cpp
+  gslib_default.cpp
+  gslexer.cpp
+  gserror.cpp
+  gsenv.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gsenv.cpp(297,34): warning C4477: 'sprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+  (compiling source file '/Gs/gsenv.cpp')
+  
+  gscompiler.cpp
+  gscfg.cpp
+  gsasm.cpp
+  gs.cpp
+  F9FileZip.cpp
+  F9Files.cpp
+  F9FileRes.cpp
+  F9FilePakZ.cpp
+  F9FilePak.cpp
+  F9FileMem.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(33,20): warning C4477: 'sscanf' : format string '%x' requires an argument of type 'unsigned int *', but variadic argument 1 has type 'byte **'
+  (compiling source file '/Files/F9FileMem.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(33,20): warning C4477: 'sscanf' : format string '%x' requires an argument of type 'unsigned int *', but variadic argument 2 has type 'int64 *'
+  (compiling source file '/Files/F9FileMem.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(33,20):
+      consider using '%llx' in the format string
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(33,20):
+      consider using '%I64x' in the format string
+  
+  Generating Code...
+  Compiling...
+  F9FileDisk.cpp
+  F9File.cpp
+  F9ArchiveZip.cpp
+  F9ArchivePak.cpp
+  F9Archive.cpp
+  D9Shutdown.cpp
+  D9Memory.cpp
+  D9Log.cpp
+  D9Guard.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(79,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(80,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(81,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(82,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(83,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(84,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(85,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(86,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(87,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(88,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(89,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(90,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(91,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(92,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(93,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(94,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(95,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(96,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+  D9DH.cpp
+  D9Debug.cpp
+  D9Breakpoint.cpp
+  E9System.cpp
+  E9String.cpp
+  E9Math.cpp
+  E9Engine.cpp
+  E9App.cpp
+  Generating Code...
+  Engine.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Engine\!Out\Debug\Engine.lib
+          1 file(s) copied.

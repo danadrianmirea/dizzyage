@@ -1,0 +1,16 @@
+﻿cl : command line  warning D9002: ignoring unknown option '/O3'
+cl : command line  warning D9002: ignoring unknown option '/QaxK'
+cl : command line  warning D9002: ignoring unknown option '/Qsox-'
+cl : command line  warning D9002: ignoring unknown option '/Qip'
+  vorbisfile.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(421,19): warning C4244: 'return': conversion from 'ogg_int64_t' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(630,18): warning C4244: 'function': conversion from 'ogg_int64_t' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(835,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(836,11): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(840,13): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(868,51): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(1346,31): warning C4244: '=': conversion from 'ogg_int64_t' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(1379,33): warning C4244: 'initializing': conversion from 'double' to 'ogg_int64_t', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(1406,33): warning C4244: 'initializing': conversion from 'double' to 'ogg_int64_t', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(1726,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  vorbisfile_static.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\VorbisFile_Static_Release\vorbisfile_static.lib

@@ -1,0 +1,15 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  vorbisfile.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(421,19): warning C4244: 'return': conversion from 'ogg_int64_t' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(630,18): warning C4244: 'function': conversion from 'ogg_int64_t' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(835,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(836,11): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(840,13): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(868,51): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(1346,31): warning C4244: '=': conversion from 'ogg_int64_t' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(1379,33): warning C4244: 'initializing': conversion from 'double' to 'ogg_int64_t', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(1406,33): warning C4244: 'initializing': conversion from 'double' to 'ogg_int64_t', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\vorbisfile.c(1726,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1554,5): warning MSB8012: TargetPath(C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\VorbisFile_Static_Debug\vorbisfile_static.lib) does not match the Library's OutputFile property value (C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\VorbisFile_Static_Debug\vorbisfile_static_d.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1556,5): warning MSB8012: TargetName(vorbisfile_static) does not match the Library's OutputFile property value (vorbisfile_static_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  vorbisfile_static.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\VorbisFile_Static_Debug\vorbisfile_static.lib

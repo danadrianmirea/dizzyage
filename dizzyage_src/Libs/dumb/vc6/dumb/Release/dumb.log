@@ -1,0 +1,48 @@
+﻿  atexit.c
+  duhlen.c
+  duhtag.c
+  dumbfile.c
+  loadduh.c
+  makeduh.c
+  rawsig.c
+  readduh.c
+  register.c
+  rendduh.c
+  rendsig.c
+  unload.c
+  clickrem.c
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\core\makeduh.c(123,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\core\makeduh.c(126,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  memfile.c
+  resample.c
+  sampbuf.c
+  silence.c
+  stdfile.c
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\helpers\stdfile.c(28,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  itload.c
+  itload2.c
+  Generating Code...
+  Compiling...
+  itmisc.c
+  itorder.c
+  itread.c
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\it\itread.c(233,34): warning C4244: '=': conversion from 'long' to 'byte', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\dumb\src\it\itread.c(242,32): warning C4244: '=': conversion from 'long' to 'byte', possible loss of data
+  itread2.c
+  itrender.c
+  itunload.c
+  loadmod.c
+  loadmod2.c
+  loads3m.c
+  loads3m2.c
+  loadxm.c
+  loadxm2.c
+  readmod.c
+  readmod2.c
+  reads3m.c
+  reads3m2.c
+  readxm.c
+  readxm2.c
+  xmeffect.c
+  Generating Code...
+  dumb.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\dumb\vc6\dumb\Release\dumb.lib

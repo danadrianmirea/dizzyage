@@ -1,0 +1,250 @@
+------------------------------------------
+| RENE DEBUG INIT ( _RELEASE )           |
+------------------------------------------
+App init.
+Files init.
+Pak archive dizzy.pak not found, running from data folder.
+Input init (api=0).
+Keyboard ok.
+Joystick 1 failed.
+Audio init (api=0).
+Render init interface (api=0).
+Video adapter info:
+  driver      = igdumdim32.dll
+  description = Intel(R) HD Graphics 520
+  version     = p30 v0.100 b9865
+Display modes:
+   0 	1366x768 	32bpp 	0Hz 	windowed
+   1 	320x200 	32bpp 	48Hz 	
+   2 	320x200 	32bpp 	60Hz 	
+   3 	320x240 	32bpp 	48Hz 	
+   4 	320x240 	32bpp 	60Hz 	
+   5 	400x300 	32bpp 	48Hz 	
+   6 	400x300 	32bpp 	60Hz 	
+   7 	512x384 	32bpp 	48Hz 	
+   8 	512x384 	32bpp 	60Hz 	
+   9 	640x400 	32bpp 	48Hz 	
+   10 	640x400 	32bpp 	60Hz 	
+   11 	640x480 	32bpp 	48Hz 	
+   12 	640x480 	32bpp 	60Hz 	
+   13 	800x600 	32bpp 	48Hz 	
+   14 	800x600 	32bpp 	60Hz 	
+   15 	1024x768 	32bpp 	48Hz 	
+   16 	1024x768 	32bpp 	60Hz 	
+   17 	1280x720 	32bpp 	48Hz 	
+   18 	1280x720 	32bpp 	60Hz 	
+   19 	1280x768 	32bpp 	48Hz 	
+   20 	1280x768 	32bpp 	60Hz 	
+   21 	1360x768 	32bpp 	48Hz 	
+   22 	1360x768 	32bpp 	60Hz 	
+   23 	1366x768 	32bpp 	48Hz 	
+   24 	1366x768 	32bpp 	60Hz 	
+
+Render init (api=0).
+Filter config:
+  Requested: DirectX windowed 640x480 32bpp 85Hz
+  Received:  DirectX windowed 640x480 32bpp 0Hz
+APP: activate on
+window size 646x509
+DizzyAGE v2.4
+DirectX windowed 640x480 32bpp 0Hz
+Developer mode on.
+Main loop start.
+
+Loading tiles from "data\tiles\loading\" (group=0)
+  data\tiles\loading\6 loading.tga [1]
+Tiles report: total=1, failed=0 (duplicates=0)
+
+Loading tiles from "data\tiles\" (group=0)
+  data\tiles\build\120 bricks.tga [1]
+  data\tiles\build\121 chains.tga [1]
+  data\tiles\build\122 fences.tga [1]
+  data\tiles\build\123 houses.tga [1]
+  data\tiles\build\124 pipes.tga [1]
+  data\tiles\build\125 woods.tga [1]
+  data\tiles\characters\170 yolkfolk.tga [1]
+  data\tiles\characters\171 daisy 2.tga [2]
+  data\tiles\characters\172 denzil 2.tga [2]
+  data\tiles\characters\173 dora 2.tga [2]
+  data\tiles\characters\174 dosy 2.tga [2]
+  data\tiles\characters\175 dylan 2.tga [2]
+  data\tiles\characters\176 grand 2.tga [2]
+  data\tiles\characters\177 pogie 2.tga [2]
+  data\tiles\characters\178 angel.tga [1]
+  data\tiles\characters\179 bear.tga [1]
+  data\tiles\characters\180 daisysleep.tga [1]
+  data\tiles\characters\181 death.tga [1]
+  data\tiles\characters\182 dragon.tga [1]
+  data\tiles\characters\183 goat.tga [1]
+  data\tiles\characters\184 jester.tga [1]
+  data\tiles\characters\185 king.tga [1]
+  data\tiles\characters\186 lion.tga [1]
+  data\tiles\characters\187 merchant.tga [1]
+  data\tiles\characters\188 monkey 2.tga [2]
+  data\tiles\characters\189 monsteregg.tga [1]
+  data\tiles\characters\190 mouse.tga [1]
+  data\tiles\characters\191 peter.tga [1]
+  data\tiles\characters\192 prince.tga [1]
+  data\tiles\characters\193 princess.tga [1]
+  data\tiles\characters\194 rockwart.tga [1]
+  data\tiles\characters\195 satan.tga [1]
+  data\tiles\characters\196 shamus.tga [1]
+  data\tiles\characters\197 troll1.tga [1]
+  data\tiles\characters\198 troll2.tga [1]
+  data\tiles\characters\199 trumpetboy.tga [1]
+  data\tiles\characters\200 vampire.tga [1]
+  data\tiles\characters\201 witch.tga [1]
+  data\tiles\characters\202 wizard.tga [1]
+  data\tiles\characters\203 zaks.tga [1]
+  data\tiles\characters\204 blackheart.tga [1]
+  data\tiles\characters\205 danny.tga [1]
+  data\tiles\characters\206 theo_spell 2.tga [2]
+  data\tiles\characters\207 theo_tappingfoot 2.tga [2]
+  data\tiles\characters\208 geinie.tga [1]
+  data\tiles\characters\209 upsetgranddizzy.tga [1]
+  data\tiles\creatures\150 creatures.tga [1]
+  data\tiles\creatures\151 bat 2.tga [2]
+  data\tiles\creatures\152 bird 2.tga [2]
+  data\tiles\creatures\153 birdsmall 2.tga [2]
+  data\tiles\creatures\154 bull 2.tga [2]
+  data\tiles\creatures\155 crab 2.tga [2]
+  data\tiles\creatures\156 croc 2.tga [2]
+  data\tiles\creatures\157 fish 4.tga [4]
+  data\tiles\creatures\158 fishbank 2.tga [2]
+  data\tiles\creatures\159 fly 2.tga [2]
+  data\tiles\creatures\160 ghost 2.tga [2]
+  data\tiles\creatures\161 medusa 2.tga [2]
+  data\tiles\creatures\162 medusasmall 2.tga [2]
+  data\tiles\creatures\163 sepia 2.tga [2]
+  data\tiles\creatures\164 spider 2.tga [2]
+  data\tiles\creatures\165 mosquetto 2.tga [2]
+  data\tiles\creatures\166 goat 2.tga [2]
+  data\tiles\decorate\130 decorations1.tga [1]
+  data\tiles\decorate\131 decorations2.tga [1]
+  data\tiles\decorate\132 decorations3.tga [1]
+  data\tiles\dizzy\10 dizzy_idle 2.tga [2]
+  data\tiles\dizzy\11 dizzy_walk 8.tga [8]
+  data\tiles\dizzy\12 dizzy_up 8.tga [8]
+  data\tiles\dizzy\13 dizzy_jump 8.tga [8]
+  data\tiles\dizzy\14 dizzy_stun 5.tga [5]
+  data\tiles\dizzy\15 dizzy_dead 5.tga [5]
+  data\tiles\dizzy\16 dizzy_em1 2.tga [2]
+  data\tiles\dizzy\17 dizzy_em2 2.tga [2]
+  data\tiles\dizzy\18 dizzy_em3 2.tga [2]
+  data\tiles\dizzy\19 dizzy_eat 2.tga [2]
+  data\tiles\dizzy\20 dizzy_swim 5.tga [5]
+  data\tiles\dizzy\21 dizzy_swimup 8.tga [8]
+  data\tiles\dizzy\22 dizzy_swimjump 8.tga [8]
+  data\tiles\dizzy\23 dizzy_drown 6.tga [6]
+  data\tiles\dizzy\40 aqua_dizzy_idle 2.tga [2]
+  data\tiles\dizzy\41 aqua_dizzy_walk 8.tga [8]
+  data\tiles\dizzy\42 aqua_dizzy_up 8.tga [8]
+  data\tiles\dizzy\43 aqua_dizzy_jump 8.tga [8]
+  data\tiles\dizzy\44 aqua_dizzy_stun 5.tga [5]
+  data\tiles\dizzy\45 aqua_dizzy_dead 5.tga [5]
+  data\tiles\dizzy\50 aqua_dizzy_swim 5.tga [5]
+  data\tiles\dizzy\51 aqua_dizzy_swimup 8.tga [8]
+  data\tiles\dizzy\52 aqua_dizzy_swimjump 8.tga [8]
+  data\tiles\dizzy\53 aqua_dizzy_drawn 6.tga [6]
+  data\tiles\dizzy\60 shrink_dizzy_idle 2.tga [2]
+  data\tiles\dizzy\61 shrink_dizzy_walk 8.tga [8]
+  data\tiles\dizzy\62 shrink_dizzy_up 8.tga [8]
+  data\tiles\dizzy\63 shrink_dizzy_jump 8.tga [8]
+  data\tiles\dizzy\65 shrink_dizzy_dead 5.tga [5]
+  data\tiles\items\210 coins.tga [1]
+  data\tiles\items\211 items1.tga [1]
+  data\tiles\items\212 items2.tga [1]
+  data\tiles\items\213 items3.tga [1]
+  data\tiles\items\214 items4.tga [1]
+  data\tiles\items\215 items5.tga [1]
+  data\tiles\items\216 items6.tga [1]
+  data\tiles\items\217 items7.tga [1]
+  data\tiles\items\218 items8.tga [1]
+  data\tiles\items\219 items9.tga [1]
+  data\tiles\landscape\100 ground.tga [1]
+  data\tiles\landscape\101 boulders1.tga [1]
+  data\tiles\landscape\102 boulders2.tga [1]
+  data\tiles\landscape\103 cave.tga [1]
+  data\tiles\landscape\104 clouds1.tga [1]
+  data\tiles\landscape\105 clouds2.tga [1]
+  data\tiles\landscape\106 clouds3.tga [1]
+  data\tiles\landscape\107 weather.tga [1]
+  data\tiles\landscape\108 mountain.tga [1]
+  data\tiles\landscape\109 castle.tga [1]
+  data\tiles\loading\6 loading.tga [1]
+  data\tiles\menu\0 default.tga [1]
+  data\tiles\menu\1 menu.tga [1]
+  data\tiles\menu\2 life.tga [1]
+  data\tiles\menu\3 dialog.tga [1]
+  data\tiles\menu\4 font.tga [1]
+  data\tiles\menu\5 dizzyage.tga [1]
+  data\tiles\objects\140 objects1.tga [1]
+  data\tiles\objects\141 mechanic1.tga [1]
+  data\tiles\objects\142 torces.tga [1]
+  data\tiles\objects\143 flame1 4.tga [4]
+  data\tiles\objects\144 flame2 8.tga [8]
+  data\tiles\objects\145 flame3 8.tga [8]
+  data\tiles\objects\146 flag 2.tga [2]
+  data\tiles\objects\147 heaven.tga [1]
+  data\tiles\objects\148 water 3.tga [3]
+  data\tiles\objects\149 twinkle 8.tga [8]
+  data\tiles\objects2\230 device1.tga [1]
+  data\tiles\objects2\231 device2.tga [1]
+  data\tiles\objects2\232 diamond 12.tga [12]
+  data\tiles\objects2\233 diamond 25.tga [25]
+  data\tiles\objects2\234 zzz 3.tga [3]
+  data\tiles\objects2\235 zzz 6.tga [6]
+  data\tiles\objects2\236 musicnotes 3.tga [3]
+  data\tiles\objects2\237 smoke 4.tga [4]
+  data\tiles\objects2\238 airbubbles.tga [1]
+  data\tiles\objects2\239 snow.tga [1]
+  data\tiles\objects2\240 water 4.tga [4]
+  data\tiles\vegetation\110 bushes.tga [1]
+  data\tiles\vegetation\111 bush.tga [1]
+  data\tiles\vegetation\112 trees1.tga [1]
+  data\tiles\vegetation\113 trees2.tga [1]
+  data\tiles\vegetation\114 trees3.tga [1]
+  data\tiles\vegetation\115 trees4.tga [1]
+  data\tiles\vegetation\116 branches.tga [1]
+Tiles report: total=150, failed=0 (duplicates=0)
+
+Loading musics from "data\music\" (group=0)
+  data\music\1 music_a.ym
+  data\music\2 music_b.ym
+  data\music\3 music_c.ym
+Music report: total=3, failed=0 (duplicates=0)
+
+Loading samples from "data\samples\" (group=0)
+  data\samples\1 success.ym [1]
+  data\samples\2 stun.ogg [1]
+  data\samples\3 death.ym [1]
+  data\samples\4 respawn.ym [1]
+  data\samples\5 coin 2.ym [2]
+  data\samples\6 hurt.ogg [1]
+  data\samples\7 jump.ogg [1]
+  data\samples\8 beep1 2.ogg [2]
+  data\samples\9 beep2 2.ogg [2]
+Samples report: total=9, failed=0 (duplicates=0)
+
+Loading fonts from "data\fonts\" (group=0)
+  data\fonts\4 font.fnt
+Fonts report: total=1, failed=0 (duplicates=0)
+
+Loading map "data\map\dizzy.map"
+  map=5x3, room=240x136, brushes=8, objects=3
+Loading map SUCCESSFUL!
+
+
+Main loop finished.
+Render done.
+Render done interface.
+Audio done.
+Input done.
+Files done.
+App done.
+----------------------------------------------------------------------
+MEMORY REPORT  (2342 Kb used)
+----------------------------------------------------------------------
+------------------------------------------
+| RENE DEBUG DONE                        |
+------------------------------------------

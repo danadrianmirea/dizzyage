@@ -1,0 +1,190 @@
+﻿cl : command line  warning D9002: ignoring unknown option '/O3'
+cl : command line  warning D9002: ignoring unknown option '/QaxK'
+cl : command line  warning D9002: ignoring unknown option '/Qsox-'
+cl : command line  warning D9002: ignoring unknown option '/Qip'
+  analysis.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\analysis.c(75,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\analysis.c(76,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\analysis.c(82,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  bitrate.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\bitrate.c(42,22): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\bitrate.c(43,22): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\bitrate.c(44,22): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\bitrate.c(51,43): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\bitrate.c(135,12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\bitrate.c(83,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\bitrate.c(88,39): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+  block.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\block.c(841,51): warning C4244: '-=': conversion from 'ogg_int64_t' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\block.c(844,52): warning C4244: '+=': conversion from 'ogg_int64_t' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\block.c(857,26): warning C4244: 'initializing': conversion from 'ogg_int64_t' to 'long', possible loss of data
+  codebook.c
+  envelope.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\envelope.c(48,20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\envelope.c(65,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\envelope.c(68,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\envelope.c(146,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\envelope.c(128,46): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  floor0.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\floor0.c(124,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\floor0.c(134,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  floor1.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\floor1.c(288,23): warning C4244: 'initializing': conversion from 'const float' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\floor1.c(455,37): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\floor1.c(509,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\floor1.c(510,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  info.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(54,12): warning C4244: '=': conversion from 'long' to 'char', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(69,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(76,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(77,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(78,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(100,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(101,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(119,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\info.c(120,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  lookup.c
+  lpc.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\lpc.c(114,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  lsp.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\lookup.c(31,23): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../lib/lsp.c')
+  
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\lookup.c(38,25): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../lib/lsp.c')
+  
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\lsp.c(101,7): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\lsp.c(351,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\lsp.c(398,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\lsp.c(450,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\lsp.c(453,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  mapping0.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mapping0.c(277,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mapping0.c(317,35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mapping0.c(334,55): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mapping0.c(390,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  mdct.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mdct.c(58,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mdct.c(66,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mdct.c(67,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mdct.c(68,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mdct.c(69,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mdct.c(72,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\mdct.c(73,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  psy.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(137,68): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(139,43): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(173,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(174,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(175,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(254,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(259,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(192,42): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(193,48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(217,42): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(218,48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(239,32): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(274,61): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(276,54): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(277,53): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(290,36): warning C4305: '=': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(291,36): warning C4305: '=': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(301,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(321,62): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(323,54): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(343,41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(296,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(308,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(332,42): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(398,46): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(400,14): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(564,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(818,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(880,16): warning C4305: '=': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(886,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(893,18): warning C4305: '=': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(897,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(937,20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(943,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(943,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(943,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(943,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(944,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(944,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(944,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(944,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(945,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(945,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(945,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(945,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(946,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(946,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(946,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(946,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(947,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(947,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(947,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(947,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(948,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(948,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(948,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(948,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(949,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(949,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(949,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(949,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(950,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(950,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(950,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(950,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(974,20): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(975,20): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(976,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(978,18): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(979,18): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(980,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(984,20): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(985,20): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(986,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(988,18): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(989,18): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(990,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1019,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1020,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1079,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1092,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1110,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1162,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1151,40): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1152,41): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1222,21): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\psy.c(1215,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  registry.c
+  res0.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\res0.c(266,18): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\res0.c(399,35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\res0.c(400,7): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\res0.c(382,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\res0.c(462,39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\res0.c(464,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  sharedbook.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(55,8): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(56,8): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(67,9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(151,13): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(210,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(230,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(209,28): warning C4244: 'initializing': conversion from 'long' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(229,28): warning C4244: 'initializing': conversion from 'long' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\sharedbook.c(379,55): warning C4244: '=': conversion from 'long' to 'char', possible loss of data
+  smallft.c
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\smallft.c(99,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\smallft.c(100,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\smallft.c(283,7): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\smallft.c(284,7): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\smallft.c(853,7): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\lib\smallft.c(854,7): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  synthesis.c
+  window.c
+  Generating Code...
+  vorbis_static.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\vorbis\win32\Vorbis_Static_Release\vorbis_static.lib

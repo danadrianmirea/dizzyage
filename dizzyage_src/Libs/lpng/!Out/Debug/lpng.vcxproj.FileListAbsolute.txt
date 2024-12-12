@@ -1,0 +1,1 @@
+C:\adi\src\dizzy\dizzyage_src\Libs\lpng\!Out\Debug\lpng.lib

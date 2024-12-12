@@ -1,0 +1,1 @@
+C:\adi\src\dizzy\dizzyage_src\Libs\ogg\win32\Static_Release\ogg_static.lib

@@ -1,0 +1,320 @@
+﻿  stdafx.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  E9App.cpp
+  E9Engine.cpp
+  E9Math.cpp
+  E9String.cpp
+  E9System.cpp
+  D9Breakpoint.cpp
+  D9Debug.cpp
+  D9DH.cpp
+  D9Guard.cpp
+  D9Log.cpp
+  D9Memory.cpp
+  D9Shutdown.cpp
+  F9Archive.cpp
+  F9ArchivePak.cpp
+  F9ArchiveZip.cpp
+  F9File.cpp
+  F9FileDisk.cpp
+  F9FileMem.cpp
+  F9FilePak.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(79,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(80,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(81,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(82,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(83,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(84,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(85,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(86,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(87,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(88,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(89,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(90,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(91,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(92,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(93,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(94,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(95,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Debug\D9Guard.cpp(96,4): warning C4838: conversion from 'unsigned long' to 'int' requires a narrowing conversion
+  (compiling source file '/Debug/D9Guard.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9Archive.cpp(21,2): warning C4297: 'f9Archive::~f9Archive': function assumed not to throw an exception but does
+  F9FilePakZ.cpp
+  (compiling source file '/Files/F9Archive.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9Archive.cpp(21,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9ArchivePak.cpp(24,2): warning C4297: 'f9ArchivePak::~f9ArchivePak': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9ArchivePak.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9ArchivePak.cpp(24,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9ArchiveZip.cpp(19,2): warning C4297: 'f9ArchiveZip::~f9ArchiveZip': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9ArchiveZip.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9ArchiveZip.cpp(19,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9File.cpp(21,2): warning C4297: 'f9File::~f9File': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9File.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9File.cpp(21,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileDisk.cpp(18,2): warning C4297: 'f9FileDisk::~f9FileDisk': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9FileDisk.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileDisk.cpp(18,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(18,2): warning C4297: 'f9FileMem::~f9FileMem': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9FileMem.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(18,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(33,20): warning C4477: 'sscanf' : format string '%x' requires an argument of type 'unsigned int *', but variadic argument 1 has type 'byte **'
+  (compiling source file '/Files/F9FileMem.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(33,20): warning C4477: 'sscanf' : format string '%x' requires an argument of type 'unsigned int *', but variadic argument 2 has type 'int64 *'
+  (compiling source file '/Files/F9FileMem.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(33,20):
+      consider using '%llx' in the format string
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileMem.cpp(33,20):
+      consider using '%I64x' in the format string
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FilePak.cpp(20,2): warning C4297: 'f9FilePak::~f9FilePak': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9FilePak.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FilePak.cpp(20,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FilePakZ.cpp(22,2): warning C4297: 'f9FilePakZ::~f9FilePakZ': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9FilePakZ.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FilePakZ.cpp(22,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  Compiling...
+  F9FileRes.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileRes.cpp(18,2): warning C4297: 'f9FileRes::~f9FileRes': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9FileRes.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileRes.cpp(18,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  F9Files.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9Files.cpp(21,2): warning C4297: 'f9Files::~f9Files': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9Files.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9Files.cpp(21,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  F9FileZip.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileZip.cpp(22,2): warning C4297: 'f9FileZip::~f9FileZip': function assumed not to throw an exception but does
+  (compiling source file '/Files/F9FileZip.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Files\F9FileZip.cpp(22,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  gs.cpp
+  gsasm.cpp
+  gscfg.cpp
+  gscompiler.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gscompiler.cpp(47,2): warning C4297: 'gsCompiler::~gsCompiler': function assumed not to throw an exception but does
+  (compiling source file '/Gs/gscompiler.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gscompiler.cpp(47,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  gsenv.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gsenv.cpp(23,2): warning C4297: 'gsEnv::~gsEnv': function assumed not to throw an exception but does
+  (compiling source file '/Gs/gsenv.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gsenv.cpp(23,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gsenv.cpp(297,34): warning C4477: 'sprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+  (compiling source file '/Gs/gsenv.cpp')
+  
+  gserror.cpp
+  gslexer.cpp
+  gslib_default.cpp
+  gslib_file.cpp
+  gslib_math.cpp
+  gslib_win.cpp
+  gsnode.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gsnode.cpp(129,2): warning C4297: 'gsNode::~gsNode': function assumed not to throw an exception but does
+  (compiling source file '/Gs/gsnode.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gsnode.cpp(129,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  gsparser.cpp
+  gsutil.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gsutil.cpp(20,2): warning C4297: 'gsHash::~gsHash': function assumed not to throw an exception but does
+  (compiling source file '/Gs/gsutil.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Gs\gsutil.cpp(20,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  gsvm.cpp
+  I9DeviceDX.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(30,2): warning C4297: 'i9DeviceDX::~i9DeviceDX': function assumed not to throw an exception but does
+  (compiling source file '/Input/I9DeviceDX.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(30,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(96,2): warning C4297: 'i9DeviceDXKeyboard::~i9DeviceDXKeyboard': function assumed not to throw an exception but does
+  (compiling source file '/Input/I9DeviceDX.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(96,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(190,2): warning C4297: 'i9DeviceDXMouse::~i9DeviceDXMouse': function assumed not to throw an exception but does
+  (compiling source file '/Input/I9DeviceDX.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(190,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(266,8): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(271,8): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(276,8): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(368,2): warning C4297: 'i9DeviceDXJoystick::~i9DeviceDXJoystick': function assumed not to throw an exception but does
+  (compiling source file '/Input/I9DeviceDX.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(368,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(477,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(478,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(479,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(480,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(481,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9DeviceDX.cpp(482,10): warning C4644: usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+  (compiling source file '/Input/I9DeviceDX.cpp')
+  
+  I9FFDX.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9FFDX.cpp(20,2): warning C4297: 'i9FFDX::~i9FFDX': function assumed not to throw an exception but does
+  (compiling source file '/Input/I9FFDX.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9FFDX.cpp(20,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  Compiling...
+  I9Input.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9Input.cpp(27,2): warning C4297: 'i9Input::~i9Input': function assumed not to throw an exception but does
+  (compiling source file '/Input/I9Input.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9Input.cpp(27,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  I9InputDX.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9InputDX.cpp(24,2): warning C4297: 'i9InputDX::~i9InputDX': function assumed not to throw an exception but does
+  (compiling source file '/Input/I9InputDX.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Input\I9InputDX.cpp(24,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  R9Font.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9Font.cpp(39,2): warning C4297: 'r9Font::~r9Font': function assumed not to throw an exception but does
+  (compiling source file '/Render/R9Font.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9Font.cpp(39,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  R9Img.cpp
+  R9ImgLoader.cpp
+  R9Render.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9Render.cpp(46,2): warning C4297: 'r9Render::~r9Render': function assumed not to throw an exception but does
+  (compiling source file '/Render/R9Render.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9Render.cpp(46,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  R9RenderDX.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9RenderDX.cpp(54,2): warning C4297: 'r9RenderDX::~r9RenderDX': function assumed not to throw an exception but does
+  (compiling source file '/Render/R9RenderDX.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9RenderDX.cpp(54,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  R9RenderGL.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9RenderGL.cpp(60,2): warning C4297: 'r9RenderGL::~r9RenderGL': function assumed not to throw an exception but does
+  (compiling source file '/Render/R9RenderGL.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9RenderGL.cpp(60,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+C:\adi\src\dizzy\dizzyage_src\Engine\Render\R9RenderGL.cpp(997,8): warning C4838: conversion from 'int' to 'BYTE' requires a narrowing conversion
+  (compiling source file '/Render/R9RenderGL.cpp')
+  
+  R9TexturePool.cpp
+  A9Audio.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Audio.cpp(25,2): warning C4297: 'a9Audio::~a9Audio': function assumed not to throw an exception but does
+  (compiling source file '/Sound/A9Audio.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Audio.cpp(25,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  A9AudioDX.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9AudioDX.cpp(53,2): warning C4297: 'a9AudioDX::~a9AudioDX': function assumed not to throw an exception but does
+  (compiling source file '/Sound/A9AudioDX.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9AudioDX.cpp(53,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  A9Codec.cpp
+  A9Codec_dumb.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Codec_dumb.cpp(38,2): warning C4297: 'a9Codec_dumb::~a9Codec_dumb': function assumed not to throw an exception but does
+  (compiling source file '/Sound/A9Codec_dumb.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Codec_dumb.cpp(38,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  A9Codec_ogg.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Codec_ogg.cpp(41,2): warning C4297: 'a9Codec_ogg::~a9Codec_ogg': function assumed not to throw an exception but does
+  (compiling source file '/Sound/A9Codec_ogg.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Codec_ogg.cpp(41,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  A9Codec_wav.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Codec_wav.cpp(19,2): warning C4297: 'a9Codec_wav::~a9Codec_wav': function assumed not to throw an exception but does
+  (compiling source file '/Sound/A9Codec_wav.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Codec_wav.cpp(19,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  A9Codec_ym.cpp
+C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Codec_ym.cpp(33,2): warning C4297: 'a9Codec_ym::~a9Codec_ym': function assumed not to throw an exception but does
+  (compiling source file '/Sound/A9Codec_ym.cpp')
+      C:\adi\src\dizzy\dizzyage_src\Engine\Sound\A9Codec_ym.cpp(33,2):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  A9Def.cpp
+  Engine.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Engine\!Out\Release\Engine.lib
+          1 file(s) copied.

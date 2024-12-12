@@ -1,0 +1,58 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  jutils.c
+  jquant2.c
+  jquant1.c
+  jmemnobs.c
+  jmemmgr.c
+  jidctred.c
+  jidctint.c
+  jidctfst.c
+  jidctflt.c
+C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\jmemmgr.c(1106,19): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jfdctint.c
+C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\jmemmgr.c(1109,11): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jfdctfst.c
+  jfdctflt.c
+  jerror.c
+C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\jerror.c(193,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\jerror.c(195,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jdtrans.c
+  jdsample.c
+  jdpostct.c
+  jdphuff.c
+  jdmerge.c
+  jdmaster.c
+  jdmarker.c
+  Generating Code...
+  Compiling...
+  jdmainct.c
+  jdinput.c
+  jdhuff.c
+  jddctmgr.c
+  jdcolor.c
+  jdcoefct.c
+  jdatasrc.c
+  jdatadst.c
+  jdapistd.c
+  jdapimin.c
+  jctrans.c
+  jcsample.c
+  jcprepct.c
+  jcphuff.c
+  jcparam.c
+  jcomapi.c
+  jcmaster.c
+  jcmarker.c
+  jcmainct.c
+  jcinit.c
+  Generating Code...
+  Compiling...
+  jchuff.c
+  jcdctmgr.c
+  jccolor.c
+  jccoefct.c
+  jcapistd.c
+  jcapimin.c
+  Generating Code...
+  ljpeg.vcxproj -> C:\adi\src\dizzy\dizzyage_src\Libs\ljpeg\!Out\Debug\ljpeg.lib
+          1 file(s) copied.
