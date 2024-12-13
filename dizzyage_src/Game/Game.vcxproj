@@ -96,7 +96,7 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(OutDir)$(ProjectName).exe" "$(SolutionDir)Bin\$(ProjectName).exe"</Command>
+      <Command>copy "$(OutDir)$(ProjectName).exe" "$(SolutionDir)Bin\Game\$(ProjectName).exe"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

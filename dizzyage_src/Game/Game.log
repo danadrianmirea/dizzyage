@@ -1,0 +1,2 @@
+ERROREXIT: GS9 ERROR
+_gserrorexit < GSErrHandler < gsVM::Error < gs_compilefile < cDizScript::Init < cDizApp::Init < AppOnInit < e9App::Init < main

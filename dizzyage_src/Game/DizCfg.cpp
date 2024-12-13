@@ -47,7 +47,7 @@ cDizCfg::cDizCfg()
 	m_scale					= 0;
 
 	m_volfx					= 100;
-	m_volmusic				= 100;
+	m_volmusic				= 0;
 	
 	m_key[KEY_LEFT][0]		= I9K_LEFT;
 	m_key[KEY_RIGHT][0]		= I9K_RIGHT;
