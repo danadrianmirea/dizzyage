@@ -1,2 +1,0 @@
-C:\adi\src\dizzy\dizzyage_src\Engine\!Out\Release\Engine.lib
-D:\adi\src\dizzyage\dizzyage_src\Engine\!Out\Release\Engine.lib
